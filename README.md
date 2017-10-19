@@ -45,10 +45,10 @@ The possibility of these behaviors was built into a game.
 Game 
 The idea is to build 3-4 child-friendly scenarios of games with ‘hidden objects’. Illustrated below is the first game I implemented. 
 
-###Scenario 
+### Scenario 
 Santa Claus has lost some his presents. They come in all colors, and are gift wrapper. Can you help them find them? Additionally, can you shake them to figure out what’s inside? 
 
-###Gameplay
+### Gameplay
 The game is a 1-screen game space where kids go around to find presents. Some of them are easy to find and are clearly visible. Some are tougher, and need manipulations (such as using the key to open the chest, or move the ambiguous clock) to find. After the participant collects a present, they get a pop-up, where they can shake the object to listen to what is inside. They can either guess the object, or skip it. If they guess it, I use speech recognition to validate their responses, and there is feedback. They can also ask questions about the present. The idea is to have the game respond automatically, but currently we have the researcher responding. The number of presents in the game is not fixed, and new presents keep popping up, because we also want to measure how long participants engage with the game.
 
 ### Logging 
