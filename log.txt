@@ -1,0 +1,863 @@
+
+Found present0
+Found present1
+Found present2
+Found present3
+Found present4
+Found present5
+Found present6
+Found present7
+2017-10-15 18:51:15.530084 , session complete
+Found present0
+Found present1
+Found present2
+Found present3
+2017-10-15 20:15:14.569334 , session complete
+Found present0
+Found present1
+2017-10-15 20:26:17.835746 , session complete
+Found present0
+Found present0
+2017-10-15 20:33:16.776394 , session complete
+Found present0
+Found present1
+2017-10-15 20:34:23.281892 , session complete
+Found present0
+Found present1
+Found present2
+2017-10-15 20:37:45.498499 , session complete
+Found present0
+2017-10-15 20:39:08.787844 , session complete
+Found present0
+Found present1
+Found present2
+2017-10-15 20:42:47.582853 , session complete
+Found present0
+2017-10-15 20:47:43.129074 , session complete
+Found present0
+Found present1
+2017-10-15 20:52:05.528758 , session complete
+Found present0
+Found present1
+Found present2
+Found present3
+Found present4
+2017-10-15 20:53:03.376224 , session complete
+Found present0
+2017-10-15 20:55:52.492077 , session complete
+2017-10-15 20:59:06.773777 , session complete
+2017-10-15 21:05:10.451549 , session complete
+Found present0
+Found present1
+Found present2
+Found present3
+Found present4
+Found present5
+Found present6
+Found present7
+2017-10-15 21:08:37.344311 , session complete
+Found present0
+Found present1
+Found present2
+Found present3
+Found present4
+Found present5
+Found present6
+2017-10-15 21:09:28.790164 , session complete
+2017-10-15 21:16:56.362227 , session complete
+Found present0
+Found present1
+Found present2
+Found present3
+2017-10-15 22:02:42.532235 , session complete
+2017-10-15 22:05:24.048747 , session complete
+2017-10-15 22:13:53.615322 , session complete
+2017-10-15 22:23:59.837235 , session complete
+Found present0
+Found present1
+Found present2
+Found present3
+Found present4
+Found present5
+Found present6
+Found present7
+Found present8
+Found present9
+Found present10
+2017-10-15 22:28:37.168650 , session complete
+2017-10-15 22:29:48.054947 , session complete
+Found present0
+2017-10-15 22:33:28.451950 , session complete
+2017-10-15 22:34:04.802468 , session complete
+2017-10-15 22:34:26.557993 , session complete
+2017-10-15 22:38:55.693851 , session complete
+2017-10-15 22:39:33.016891 , session complete
+2017-10-15 22:40:33.122184 , session complete
+2017-10-15 22:41:23.036061 , session complete
+2017-10-15 22:42:23.814026 , session complete
+2017-10-15 22:47:27.909962 , session complete
+2017-10-15 22:49:11.768532 , session complete
+2017-10-15 22:50:11.683606 , session complete
+2017-10-15 22:50:52.275211 , session complete
+2017-10-15 22:51:35.773545 , session complete
+2017-10-15 22:54:15.574409 , session complete
+2017-10-15 22:55:01.380388 , session complete
+2017-10-15 23:01:01.492838 , session complete
+2017-10-15 23:01:59.988928 , session complete
+2017-10-15 23:02:14.658671 , session complete
+Found present0
+Found present1
+Found present2
+Found present3
+Found present4
+2017-10-15 23:02:45.807492 , session complete
+2017-10-15 23:11:21.636332 , session complete
+2017-10-15 23:11:34.145787 , session complete
+2017-10-15 23:21:04.009679 , session complete
+2017-10-15 23:25:01.392807 , session complete
+Found present0
+Found present0
+Found present0
+2017-10-15 23:38:30.953582 , session complete
+Found present0
+Found present1
+2017-10-15 23:46:53.901344 , session complete
+Found present0
+Found present0
+2017-10-16 01:10:06.133901 , session complete
+Found present0
+2017-10-16 01:10:56.511896 , session complete
+Found present0
+Found present1
+Found present2
+Found present3
+Found present4
+Found present5
+Found present6
+Found present7
+Found present8
+2017-10-16 01:14:54.012685 , session complete
+2017-10-16 01:17:24.791025 , session complete
+2017-10-16 01:20:45.520473 , session complete
+2017-10-16 01:21:04.634879 , session complete
+2017-10-16 01:22:34.658420 , session complete
+2017-10-16 01:24:28.370991 , session complete
+2017-10-16 01:26:18.401506 , session complete
+2017-10-16 01:33:24.761506 , session complete
+Found present0
+Found present1
+Found present2
+Found present3
+Found present4
+Found present5
+Found present6
+Found present7
+2017-10-16 01:45:20.542077 , session complete
+2017-10-16 01:45:42.695452 , session complete
+Found present0
+Found present0
+2017-10-16 01:53:31.801372 , session complete0 presents collected
+2017-10-16 02:06:45.172626 , session complete
+Found present0
+Found present1
+Found present2
+Found present3
+Found present4
+Found present5
+Found present67 presents collected
+9objects manipulated, and 2 total number of manipulations
+2017-10-16 02:07:41.896883 , session complete0 presents collected
+0objects manipulated, and 0 total number of manipulations
+2017-10-16 02:14:58.190235 , session complete
+Found present0
+Found present1
+Found present2
+Found present3
+Found present4
+Found present5
+Found present6
+Found present78 presents collected
+17objects manipulated, and 4 total number of manipulations
+2017-10-16 02:16:58.952066 , session complete0 presents collected
+0objects manipulated, and 0 total number of manipulations
+2017-10-16 02:20:29.703361 , session complete0 presents collected
+0objects manipulated, and 0 total number of manipulations
+2017-10-16 02:21:29.168672 , session complete
+Found present0
+Found present1
+Found present2
+Found present3
+Found present4
+Found present5
+Found present6
+Found present7
+Found present89 presents collected
+26objects manipulated, and 2 total number of manipulations
+2017-10-16 09:30:26.216218 , session complete
+Found present0
+Found present1
+Found present2
+Found present34 presents collected
+4objects manipulated, and 4 total number of manipulations
+2017-10-16 09:42:58.404508 , session complete
+Found present0
+Found present01 presents collected
+1objects manipulated, and 0 total number of manipulations
+2017-10-16 09:44:04.134265 , session complete
+Found present01 presents collected
+1objects manipulated, and 0 total number of manipulations
+2017-10-16 09:44:16.778178 , session complete
+Found present01 presents collected
+0objects manipulated, and 5 total number of manipulations
+2017-10-16 09:45:44.277934 , session complete
+Found present01 presents collected
+2objects manipulated, and 1 total number of manipulations
+2017-10-16 09:46:10.871712 , session complete
+Found present0
+Found present0
+Found present0
+Found present00 presents collected
+0objects manipulated, and 0 total number of manipulations
+2017-10-16 09:50:11.635353 , session complete0 presents collected
+1objects manipulated, and 1 total number of manipulations
+2017-10-16 09:50:50.966739 , session complete
+Found present01 presents collected
+3objects manipulated, and 2 total number of manipulations
+2017-10-16 09:51:24.609964 , session complete
+Found present0
+Found present1
+Found present2
+Found present3
+Found present4
+Found present5
+Found present6
+Found present7
+Found present8
+Found present910 presents collected
+30objects manipulated, and 7 total number of manipulations
+2017-10-16 09:52:19.550602 , session complete0 presents collected
+0objects manipulated, and 0 total number of manipulations
+2017-10-16 09:53:37.477148 , session complete0 presents collected
+0objects manipulated, and 0 total number of manipulations
+2017-10-16 09:54:52.337284 , session complete
+Found present0
+Found present1
+Found present23 presents collected
+0objects manipulated, and 0 total number of manipulations
+2017-10-16 09:55:27.467575 , session complete
+Found present01 presents collected
+2objects manipulated, and 2 total number of manipulations
+2017-10-16 10:12:38.862961 , session complete
+Found present01 presents collected
+2objects manipulated, and 1 total number of manipulations
+2017-10-16 10:19:47.555462 , session complete0 presents collected
+0objects manipulated, and 0 total number of manipulations
+2017-10-16 10:21:30.768977 , session complete
+Found present0
+Found present0
+Found present12 presents collected
+0objects manipulated, and 0 total number of manipulations
+2017-10-16 10:25:47.711761 , session complete0 presents collected
+0objects manipulated, and 0 total number of manipulations
+2017-10-16 10:26:46.118147 , session complete
+Found present0
+Found present0
+Found present1
+Found present2
+Found present3
+Found present45 presents collected
+7objects manipulated, and 1 total number of manipulations
+2017-10-16 10:28:08.136519 , session complete
+Found present0
+Found present1
+Found present2
+Found present3
+Found present4
+Found present5
+Found present6
+Found present7
+Found present89 presents collected
+10objects manipulated, and 4 total number of manipulations
+2017-10-16 11:30:02.924644 , session complete
+Found present0
+Found present1
+Found present2
+Found present3
+Found present4
+Found present5
+Found present6
+Found present7
+Found present8
+Found present910 presents collected
+18objects manipulated, and 4 total number of manipulations
+2017-10-16 11:47:14.211365 , session complete
+Found present01 presents collected
+4objects manipulated, and 5 total number of manipulations
+2017-10-16 12:42:29.558013 , session complete
+Found present0
+Found present12 presents collected
+3objects manipulated, and 3 total number of manipulations
+2017-10-16 12:43:45.444577 , session complete
+Found present01 presents collected
+10objects manipulated, and 3 total number of manipulations
+2017-10-16 12:57:18.214747 , session complete
+Found present0
+Found present12 presents collected
+11objects manipulated, and 6 total number of manipulations
+2017-10-16 13:03:21.659401 , session complete
+Found present0
+Found present12 presents collected
+5objects manipulated, and 2 total number of manipulations
+2017-10-16 13:03:59.959769 , session complete
+Found present0
+Found present12 presents collected
+0objects manipulated, and 1 total number of manipulations
+2017-10-16 13:04:38.637152 , session complete
+Found present01 presents collected
+1objects manipulated, and 2 total number of manipulations
+2017-10-16 13:06:41.984478 , session complete
+Found present01 presents collected
+2objects manipulated, and 4 total number of manipulations
+2017-10-16 13:16:29.187262 , session complete0 presents collected
+2objects manipulated, and 3 total number of manipulations
+2017-10-16 13:21:20.285740 , session complete
+Found present0
+Found present1
+Found present2
+Found present3
+Found present4
+Found present5
+Found present6
+Found present78 presents collected
+16objects manipulated, and 5 total number of manipulations
+2017-10-16 13:51:16.661852 , session complete0 presents collected
+0objects manipulated, and 0 total number of manipulations
+2017-10-16 13:51:57.699783 , session complete
+Found present0
+Found present12 presents collected
+0objects manipulated, and 1 total number of manipulations
+2017-10-16 14:46:22.874218 , session complete0 presents collected
+0objects manipulated, and 0 total number of manipulations
+2017-10-16 14:50:54.781311 , session complete0 presents collected
+0objects manipulated, and 0 total number of manipulations
+2017-10-16 15:13:20.896279 , session complete0 presents collected
+0objects manipulated, and 0 total number of manipulations
+2017-10-16 15:33:49.183204 , session complete
+Found present0
+Found present1
+Found present2
+Found present3
+Found present4
+Found present5
+Found present6
+Found present7
+Found present89 presents collected
+8objects manipulated, and 3 total number of manipulations
+2017-10-16 20:46:13.874041 , session complete0 presents collected
+0objects manipulated, and 0 total number of manipulations
+2017-10-16 20:49:15.465626 , session complete
+Found present01 presents collected
+0objects manipulated, and 0 total number of manipulations
+2017-10-16 21:29:57.756406 , session complete
+Found present0
+Found present1
+Found present2
+Found present3
+Found present4
+Found present5
+Found present6
+Found present0
+Found present1
+Found present2
+Found present3
+Found present4
+Found present5
+Found present6
+Found present0
+Found present1
+Found present2
+Found present3
+Found present4
+Found present5
+Found present67 presents collected
+0objects manipulated, and 0 total number of manipulations
+2017-10-16 21:35:40.858356 , session complete
+Found present0
+Found present1
+Found present2
+Found present3
+Found present4
+Found present5
+Found present6
+Found present7
+Found present89 presents collected
+8objects manipulated, and 3 total number of manipulations
+2017-10-16 21:40:22.261094 , session complete
+Found present0
+Found present1
+Found present2
+Found present3
+Found present4
+Found present5
+Found present6
+Found present7
+Found present89 presents collected
+16objects manipulated, and 5 total number of manipulations
+2017-10-16 21:50:26.436291 , session complete
+Found present0
+Found present1
+Found present2
+Found present3
+Found present4
+Found present5
+Found present67 presents collected
+0objects manipulated, and 0 total number of manipulations
+2017-10-16 21:57:56.964727 , session complete
+Found present0
+Found present1
+Found present2
+Found present0
+Found present0
+Found present1
+Found present0
+Found present1
+Found present2
+Found present3
+Found present4
+Found present5
+Found present6
+Found present7
+Found present8
+Found present0
+Found present1
+Found present2
+Found present3
+Found present4
+Found present5
+Found present6
+Found present7
+Found present89 presents collected
+19objects manipulated, and 3 total number of manipulations
+2017-10-16 22:09:40.448112 , session complete
+Found present0
+Found present1
+Found present2
+Found present3
+Found present4
+Found present5
+Found present6
+Found present7
+Found present8
+Found present910 presents collected
+12objects manipulated, and 4 total number of manipulations
+2017-10-16 22:11:23.593808 , session complete
+Found present0
+Found present1
+Found present2
+Found present3
+Found present4
+Found present5
+Found present6
+Found present78 presents collected
+6objects manipulated, and 1 total number of manipulations
+2017-10-16 22:13:09.752454 , session complete
+Found present0
+Found present1
+Found present2
+Found present3
+Found present4
+Found present5
+Found present67 presents collected
+0objects manipulated, and 0 total number of manipulations
+2017-10-16 22:16:09.915053 , session complete
+Found present0
+Found present1
+Found present2
+Found present3
+Found present4
+Found present5
+Found present6
+Found present78 presents collected
+9objects manipulated, and 4 total number of manipulations
+2017-10-16 22:37:51.756427 , session complete
+Found present01 presents collected
+3objects manipulated, and 3 total number of manipulations
+2017-10-16 22:53:16.318564 , session complete
+Found present0
+Found present1
+Found present2
+Found present3
+Found present4
+Found present5
+Found present6
+Found present7
+Found present89 presents collected
+27objects manipulated, and 7 total number of manipulations
+2017-10-16 23:03:43.236711 , session complete0 presents collected
+0objects manipulated, and 0 total number of manipulations
+2017-10-16 23:09:54.310223 , session complete0 presents collected
+0objects manipulated, and 0 total number of manipulations
+2017-10-16 23:10:08.114658 , session complete0 presents collected
+0objects manipulated, and 0 total number of manipulations
+2017-10-16 23:10:33.756912 , session complete
+Found present0
+Found present1
+Found present2
+Found present3
+Found present4
+Found present5
+Found present6
+Found present7
+Found present89 presents collected
+7objects manipulated, and 4 total number of manipulations
+2017-10-16 23:19:32.734247 , session complete
+Found present0
+Found present1
+Found present2
+Found present3
+Found present4
+Found present5
+Found present67 presents collected
+0objects manipulated, and 0 total number of manipulations
+2017-10-16 23:34:02.037792 , session complete0 presents collected
+0objects manipulated, and 0 total number of manipulations
+2017-10-16 23:35:44.815719 , session complete0 presents collected
+0objects manipulated, and 0 total number of manipulations
+2017-10-16 23:36:01.553991 , session complete
+Found present0
+Found present1
+Found present23 presents collected
+0objects manipulated, and 0 total number of manipulations
+2017-10-16 23:37:07.617723 , session complete
+Found present01 presents collected
+0objects manipulated, and 0 total number of manipulations
+2017-10-16 23:37:19.086860 , session complete
+Found present01 presents collected
+0objects manipulated, and 0 total number of manipulations
+2017-10-16 23:37:46.293574 , session complete
+Found present0
+Found present12 presents collected
+0objects manipulated, and 0 total number of manipulations
+2017-10-16 23:38:03.369752 , session complete
+Found present01 presents collected
+0objects manipulated, and 0 total number of manipulations
+2017-10-16 23:42:08.154043 , session complete
+Found present01 presents collected
+0objects manipulated, and 0 total number of manipulations
+2017-10-16 23:42:39.212092 , session complete
+Found present0
+Found present01 presents collected
+0objects manipulated, and 0 total number of manipulations
+2017-10-16 23:58:32.732816 , session complete
+Found present01 presents collected
+0objects manipulated, and 0 total number of manipulations
+2017-10-17 00:00:19.586741 , session complete
+Found present0
+Found present1
+Found present01 presents collected
+0objects manipulated, and 0 total number of manipulations
+2017-10-17 00:04:11.061549 , session complete
+Found present01 presents collected
+0objects manipulated, and 0 total number of manipulations
+2017-10-17 00:05:38.747899 , session complete0 presents collected
+0objects manipulated, and 0 total number of manipulations
+2017-10-17 00:08:39.279322 , session complete
+Found present0
+Found present12 presents collected
+0objects manipulated, and 0 total number of manipulations
+2017-10-17 00:08:56.420683 , session complete
+Found present01 presents collected
+0objects manipulated, and 0 total number of manipulations
+2017-10-17 00:10:32.454578 , session complete
+Found present01 presents collected
+0objects manipulated, and 0 total number of manipulations
+2017-10-17 00:10:57.663813 , session complete
+Found present0
+Found present0
+Found present01 presents collected
+0objects manipulated, and 0 total number of manipulations
+2017-10-17 00:12:51.620889 , session complete
+Found present0
+Found present1
+Found present2
+Found present3
+Found present4
+Found present5
+Found present6
+Found present7
+Found present89 presents collected
+6objects manipulated, and 2 total number of manipulations
+2017-10-17 00:46:47.673224 , session complete
+Found present0
+Found present1
+Found present2
+Found present3
+Found present4
+Found present5
+Found present6
+Found present7
+Found present8
+Found present910 presents collected
+17objects manipulated, and 8 total number of manipulations
+2017-10-17 00:48:38.340482 , session complete
+Found present0
+Found present1
+Found present2
+Found present3
+Found present4
+Found present5
+Found present6
+Found present7
+Found present8
+Found present910 presents collected
+31objects manipulated, and 8 total number of manipulations
+2017-10-17 01:00:41.977542 , session complete
+Found present0
+Found present1
+Found present23 presents collected
+14objects manipulated, and 1 total number of manipulations
+2017-10-17 01:03:27.851730 , session complete
+Found present0
+Found present12 presents collected
+0objects manipulated, and 0 total number of manipulations
+2017-10-17 01:07:07.482762 , session complete
+Found present0
+Found present1
+Found present2
+Found present3
+Found present4
+Found present5
+Found present6
+Found present7
+Found present89 presents collected
+9objects manipulated, and 2 total number of manipulations
+2017-10-17 01:07:47.469536 , session complete
+Found present0
+Found present0
+Found present0
+Found present0
+Found present01 presents collected
+2objects manipulated, and 1 total number of manipulations
+2017-10-17 01:14:48.468166 , session complete
+Found present0
+Found present12 presents collected
+3objects manipulated, and 1 total number of manipulations
+2017-10-17 01:16:27.669319 , session complete
+Found present0
+Found present1
+Found present2
+Found present3
+Found present45 presents collected
+3objects manipulated, and 2 total number of manipulations
+2017-10-17 01:58:33.989564 , session complete0 presents collected
+0objects manipulated, and 0 total number of manipulations
+2017-10-17 02:13:04.527841 , session complete
+Found present0
+Found present1
+Found present2
+Found present3
+Found present4
+Found present5
+Found present6
+Found present7
+Found present89 presents collected
+14objects manipulated, and 3 total number of manipulations
+2017-10-17 02:41:11.607279 , session complete
+Found present0
+Found present1
+Found present2
+Found present3
+Found present4
+Found present5
+Found present6
+Found present7
+Found present8
+Found present910 presents collected
+18objects manipulated, and 4 total number of manipulations
+2017-10-17 02:44:19.166839 , session complete
+Found present01 presents collected
+0objects manipulated, and 0 total number of manipulations
+2017-10-17 02:52:52.557348 , session complete
+Found present0
+Found present12 presents collected
+0objects manipulated, and 0 total number of manipulations
+2017-10-17 02:55:36.324541 , session complete
+Found present0
+Found present1
+Found present2
+Found present34 presents collected
+0objects manipulated, and 0 total number of manipulations
+2017-10-17 11:02:40.881906 , session complete
+Found present0
+Found present12 presents collected
+0objects manipulated, and 0 total number of manipulations
+2017-10-17 11:08:05.470575 , session complete
+Found present0
+Found present1
+Found present2
+Found present3
+Found present4
+Found present5
+Found present6
+Found present7
+Found present8
+Found present910 presents collected
+107objects manipulated, and 13 total number of manipulations
+2017-10-17 12:19:16.050007 , session complete
+Found present0
+Found present1
+Found present2
+Found present34 presents collected
+22objects manipulated, and 3 total number of manipulations
+2017-10-17 13:02:46.952230 , session complete
+Found present0
+Found present0
+Found present1
+Found present2
+Found present3
+Found present4
+Found present5
+Found present6
+Found present7
+Found present8
+Found present910 presents collected
+21objects manipulated, and 5 total number of manipulations
+2017-10-17 13:20:39.811653 , session complete
+Found present01 presents collected
+0objects manipulated, and 0 total number of manipulations
+2017-10-17 13:21:09.958886 , session complete
+Found present0
+Found present0
+Found present12 presents collected
+0objects manipulated, and 0 total number of manipulations
+2017-10-17 13:22:47.266367 , session complete
+Found present0
+Found present1
+Found present01 presents collected
+0objects manipulated, and 0 total number of manipulations
+2017-10-17 13:25:13.018645 , session complete
+Found present0
+Found present1
+Found present2
+Found present3
+Found present4
+Found present5
+Found present6
+Found present7
+Found present8
+Found present910 presents collected
+26objects manipulated, and 4 total number of manipulations
+2017-10-17 13:30:24.083220 , session complete
+Found present0
+Found present1
+Found present2
+Found present3
+Found present4
+Found present5
+Found present6
+Found present7
+Found present8
+Found present910 presents collected
+18objects manipulated, and 3 total number of manipulations
+2017-10-17 13:36:09.542301 , session complete
+Found present0
+Found present1
+Found present2
+Found present3
+Found present4
+Found present5
+Found present6
+Found present7
+Found present8
+Found present9
+Found present0
+Found present1
+Found present2
+Found present3
+Found present0
+Found present1
+Found present2
+Found present0
+Found present1
+Found present2
+Found present3
+Found present4
+Found present5
+Found present6
+Found present0
+Found present1
+Found present2
+Found present3
+Found present4
+Found present5
+Found present6
+Found present7
+Found present8
+Found present9
+Found present0
+Found present1
+Found present2
+Found present3
+Found present4
+Found present5
+Found present67 presents collected
+41objects manipulated, and 7 total number of manipulations
+2017-10-17 14:52:26.233839 , session complete
+Found present0
+Found present1
+Found present2
+Found present3
+Found present0
+Found present1
+Found present2
+Found present3
+Found present4
+Found present5
+Found present6
+Found present7
+Found present8
+Found present9
+Found present0
+Found present1
+Found present23 presents collected
+5objects manipulated, and 3 total number of manipulations
+2017-10-17 16:33:11.601652 , session complete
+Found present0
+Found present1
+Found present2
+Found present3
+Found present4
+Found present5
+Found present6
+Found present78 presents collected
+34objects manipulated, and 8 total number of manipulations
+2017-10-17 17:16:42.367112 , session complete
+Found present0
+Found present1
+Found present2
+Found present3
+Found present4
+Found present5
+Found present6
+Found present7
+Found present80 presents collected
+0objects manipulated, and 0 total number of manipulations
+2017-10-18 15:36:27.774394 , session complete
+Found present0
+Found present1
+Found present2
+Found present3
+Found present45 presents collected
+32objects manipulated, and 3 total number of manipulations
+2017-10-18 15:39:43.885627 , session complete
+Found present01 presents collected
+7objects manipulated, and 6 total number of manipulations
+2017-10-19 14:43:49.215338 , session complete
+Found present0
+Found present1
+Found present2
+Found present3
+Found present4
+Found present56 presents collected
+18objects manipulated, and 3 total number of manipulations
+2017-10-19 17:08:34.289615 , session complete
