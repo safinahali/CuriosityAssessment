@@ -7,18 +7,16 @@ except ImportError:
 import pygame, sys, random, time
 from random import randint
 from pygame.locals import*
-import speech_recognition as sr
+# import speech_recognition as sr
 from os import path
 
 import moviepy
-print(moviepy.__file__)
+# print(moviepy.__file__)
 
 # try:
 #         import android
 # except Import:
 #         android = None
-
-
 
 # --- constants --- (UPPER_CASE names)
 
@@ -76,6 +74,10 @@ i = 0
 j = 0
 number_of_manipulations = 0
 objects_manipulated = 0
+guesses = 0
+sensory_interactions_sound = 0
+ambiguous_objects_manipulated = 0
+successful_manipulations = 0
 
 # while j < 12:
 #         img[j] = pygame.image.load('present' + str(j) + '.png')
@@ -213,7 +215,6 @@ collectedPresentImage9 = img9.get_rect()
 collectedPresentImage9.x = 2000
 collectedPresentImage9.y = 2000
 
-
 #overlay
 overlay = pygame.image.load('assets/overlay.png')
 overlayfab = overlay.get_rect()
@@ -231,7 +232,6 @@ overlayskip.x = 2000
 overlayskip.y = 2000
 
 overlayOn = False
-
 
 #sounds
 blip = pygame.mixer.Sound("assets/blip.wav")
@@ -267,6 +267,12 @@ clock = pygame.time.Clock()
 
 running = True
 
+#start time logging
+from datetime import datetime
+f = open('log.txt','a')
+f.write('\n' + str(datetime.now()) + ' , session start')
+f.close()
+
 while running:
 
     # - events -
@@ -278,7 +284,15 @@ while running:
         elif event.type == pygame.MOUSEBUTTONDOWN:
                 
 
-                if event.button == 1:            
+                
+
+                if event.button == 1:
+
+
+                        f = open('log.txt','a')
+                        f.write('\n' + '[Click Record] = ' + str(event.pos))
+                        f.close()  
+
                         # drag the hammer
                         if hammerfab.collidepoint(event.pos) and overlayOn == False:
                                 hammerfab_dragging = True
@@ -603,7 +617,7 @@ while running:
                                 mouse_x, mouse_y = event.pos
                                 #Log present collection
                                 f = open('log.txt','a')
-                                f.write('\n' + 'Found present' + str(i))
+                                f.write('\n' + 'Found present ' + str(i))
                                 f.close()
                                 i += 1
                                 presentImage9.x = 2000
@@ -627,7 +641,6 @@ while running:
                                 overlayskip.y = 512
 
                                 overlayOn = True
-
 
                         #Shake0
                         if collectedPresentImage0.collidepoint(event.pos):
@@ -681,7 +694,7 @@ while running:
                         if collectedPresentImage8.collidepoint(event.pos):
                                 mouse_x, mouse_y = event.pos
                                 #play sound
-                                print ('collectedPresentImage8')
+                                #print ('collectedPresentImage8')
                                 rattle.play()
 
 
@@ -791,7 +804,6 @@ while running:
     screen.fill(WHITE)
     screen.blit(bg, (0, 0))
 
-
     # pygame.draw.rect(screen, RED, rectangleA)
     # pygame.draw.rect(screen, BLACK, rectangleB)
     screen.blit(img0, presentImage0)
@@ -835,10 +847,88 @@ while running:
     clock.tick(FPS)
 
 # - end -
+
+# Log parameters 
+# Global : 
+#     mouse click locations 
+#     time stamp of events 
+
+# Event based : 
+#     Interacting with novel sensory interactions / sensory experiences such as touch, sight, and sound - deviating from regular : Number of sound interactions 
+#     Novel objects interacted with (animated presents, and objects with sound) : Number of animated presents clicked on 
+#     Ambiguous objects interacted with : Clock, paper stroll clicks
+#     Number of manipulations : Key, axe, tree, present shaking
+#     Number of attempts made to answer the guessing puzzle : Number of clicks on Guess
+#     Number of questions asked : NA 
+#     Number of questions that aided the hypothesis of what’s inside : NA
+#     Number of hidden presents found : Easy presents collected, Hidden presents collected, Total presents collected
+#     Time spent exploring the game : Time stamps 
+#     If the objects were mapped to their correct use : Present behind axe, key collected
+
+
 from datetime import datetime
+
 f = open('log.txt','a')
-f.write(str(i) + ' presents collected')
-f.write('\n' + str(objects_manipulated) + 'objects manipulated, and ' + str(number_of_manipulations) + ' total number of manipulations')
+
+
+#     Interacting with novel sensory interactions / sensory experiences such as touch, sight, and sound - deviating from regular : Number of sound interactions 
+#TODO
+f.write('\n' + '[Sensory Interactions : sound] = ' + str(sensory_interactions_sound))
+
+#     Novel objects interacted with (animated presents, and objects with sound) : Number of animated presents clicked on 
+#f.write('\n' + '[Novel objects manipulated] = ' + str(animated_objects_manipulated))
+
+#     Ambiguous objects interacted with : Clock, paper stroll clicks
+#TODO
+f.write('\n' + '[Ambiguous objects manipulated] = ' + str(ambiguous_objects_manipulated))
+
+#     Number of manipulations : Key, axe, tree, present shaking
+f.write('\n' + '[Objects manipulated] = ' + str(objects_manipulated))
+f.write('\n' + '[Total manipulation actions] = ' + str(number_of_manipulations))
+
+#     Number of attempts made to answer the guessing puzzle : Number of clicks on Guess
+#TODO
+f.write('\n' + '[Number of guesses] = ' + str(guesses))
+
+#     Number of questions asked : NA 
+
+#     Number of questions that aided the hypothesis of what’s inside : NA
+
+#     Number of hidden presents found : Easy presents collected, Hidden presents collected, Total presents collected
+f.write('\n' + '[Presents collected] = ' + str(i))
+#TODO
+f.write('\n' + '[Easy presents collected] = ' + str(i))
+f.write('\n' + '[Hidden presents collected] = ' + str(i))
+
+#     If the objects were mapped to their correct use : Present behind axe, key collected
+# TODO
+f.write('\n' + '[Objects mapped to correct use] = ' + str(successful_manipulations))
+
+#     Time spent exploring the game : Time stamps  
+
 f.write('\n' + str(datetime.now()) + ' , session complete')
+
 f.close()
+
 pygame.quit()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
