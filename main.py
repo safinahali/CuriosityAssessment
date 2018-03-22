@@ -70,6 +70,7 @@ chest_visible = True
 drum_visible = True
 clock_unmoved = True
 
+
 i = 0
 j = 0
 number_of_manipulations = 0
@@ -78,6 +79,7 @@ guesses = 0
 sensory_interactions_sound = 0
 ambiguous_objects_manipulated = 0
 successful_manipulations = 0
+hidden = 0
 
 # while j < 12:
 #         img[j] = pygame.image.load('present' + str(j) + '.png')
@@ -350,6 +352,8 @@ while running:
                                 overlayskip.x = 689
                                 overlayskip.y = 512
 
+                                hidden += 1
+
                                 overlayOn = True
 
                          #Collecting a present
@@ -383,6 +387,8 @@ while running:
                                 overlayskip.y = 512
 
                                 overlayOn = True
+
+                                hidden += 1
 
                          #Collecting a present
                         if presentImage2.collidepoint(event.pos) and overlayOn == False:
@@ -540,7 +546,7 @@ while running:
                                 mouse_x, mouse_y = event.pos
                                 #Log present collection
                                 f = open('log.txt','a')
-                                f.write('\n' + 'Found present' + str(i))
+                                f.write('\n' + 'Found present ' + str(i))
                                 f.close()
                                 i += 1
                                 presentImage7.x = 2000
@@ -569,7 +575,7 @@ while running:
                                 mouse_x, mouse_y = event.pos
                                 #Log present collection
                                 f = open('log.txt','a')
-                                f.write('\n' + 'Found present' + str(i))
+                                f.write('\n' + 'Found present ' + str(i))
                                 f.close()
                                 i += 1
                                 presentImage8.x = 2000
@@ -611,6 +617,15 @@ while running:
 
                                 overlayOn = False
 
+                        if overlayguess.collidepoint(event.pos):
+                                mouse_x, mouse_y = event.pos
+                                print('guessing')
+                                #Log skipping time - incomplete
+                                # f = open('log.txt','a')
+                                # f.write('\n' + 'Found present' + str(i))
+                                # f.close()
+                                guesses += 1
+
 
                         #Collecting a present
                         if presentImage9.collidepoint(event.pos) and clock_unmoved == False:
@@ -622,7 +637,7 @@ while running:
                                 i += 1
                                 presentImage9.x = 2000
                                 presentImage9.y = 2000
-                                print('working')
+                                print('workinghid')
 
                                 #play sound
                                 blip.play()
@@ -642,53 +657,63 @@ while running:
 
                                 overlayOn = True
 
+                                hidden += 1
+
                         #Shake0
                         if collectedPresentImage0.collidepoint(event.pos):
                                 mouse_x, mouse_y = event.pos
                                 #play sound
                                 pig.play()
+                                sensory_interactions_sound += 1
 
                         #Shake1
                         if collectedPresentImage1.collidepoint(event.pos):
                                 mouse_x, mouse_y = event.pos
                                 #play sound
                                 ball.play()
+                                sensory_interactions_sound += 1
 
                         #Shake2
                         if collectedPresentImage2.collidepoint(event.pos):
                                 mouse_x, mouse_y = event.pos
                                 #play sound
                                 bike.play()
+                                sensory_interactions_sound += 1
 
                         #Shake3
                         if collectedPresentImage3.collidepoint(event.pos):
                                 mouse_x, mouse_y = event.pos
                                 #play sound
                                 horn.play()
+                                sensory_interactions_sound += 1
 
                         #Shake4
                         if collectedPresentImage4.collidepoint(event.pos):
                                 mouse_x, mouse_y = event.pos
                                 #play sound
                                 cloth.play()
+                                sensory_interactions_sound += 1
 
                         #Shake5
                         if collectedPresentImage5.collidepoint(event.pos):
                                 mouse_x, mouse_y = event.pos
                                 #play sound
                                 sad.play()
+                                sensory_interactions_sound += 1
 
                         #Shake6
                         if collectedPresentImage6.collidepoint(event.pos):
                                 mouse_x, mouse_y = event.pos
                                 #play sound
                                 coins.play()
+                                sensory_interactions_sound += 1
 
                         #Shake7
                         if collectedPresentImage7.collidepoint(event.pos):
                                 mouse_x, mouse_y = event.pos
                                 #play sound
                                 dog.play()
+                                sensory_interactions_sound += 1
 
                         #Shake8
                         if collectedPresentImage8.collidepoint(event.pos):
@@ -696,6 +721,7 @@ while running:
                                 #play sound
                                 #print ('collectedPresentImage8')
                                 rattle.play()
+                                sensory_interactions_sound += 1
 
 
                         #Shake9
@@ -703,6 +729,7 @@ while running:
                                 mouse_x, mouse_y = event.pos
                                 #play sound
                                 train.play()
+                                sensory_interactions_sound += 1
 
                         
 
@@ -728,8 +755,9 @@ while running:
                         objects_manipulated += 1
 
                         magic.play()
-                        print ('playing')
+                        # print ('playing')
                         magic = empty
+                        successful_manipulations += 1
 
                 if hammerfab.x < 625 and hammerfab.x > 496 and hammerfab.y < 717 and hammerfab.y > 542:
                         drumfab.x = 2000
@@ -738,16 +766,18 @@ while running:
                         objects_manipulated +=1
 
                         chop.play()
-                        print ('playing')
+                        # print ('playing')
                         chop = empty
+                        successful_manipulations += 1
 
 
                 if (wclockfab.x < 725 or wclockfab.x > 846 or wclockfab.y > 105) and overlayOn == False:
                         # drumfab.x = 2000
                         # drumfab.y = 2000
                         clock_unmoved = False
-                        objects_manipulated +=1
+                        # objects_manipulated +=1
                         print ('clock moved')
+                        # successful_manipulations += 1
 
         elif event.type == pygame.MOUSEMOTION:
                 if hammerfab_dragging:
@@ -870,9 +900,7 @@ from datetime import datetime
 
 f = open('log.txt','a')
 
-
 #     Interacting with novel sensory interactions / sensory experiences such as touch, sight, and sound - deviating from regular : Number of sound interactions 
-#TODO
 f.write('\n' + '[Sensory Interactions : sound] = ' + str(sensory_interactions_sound))
 
 #     Novel objects interacted with (animated presents, and objects with sound) : Number of animated presents clicked on 
@@ -887,7 +915,6 @@ f.write('\n' + '[Objects manipulated] = ' + str(objects_manipulated))
 f.write('\n' + '[Total manipulation actions] = ' + str(number_of_manipulations))
 
 #     Number of attempts made to answer the guessing puzzle : Number of clicks on Guess
-#TODO
 f.write('\n' + '[Number of guesses] = ' + str(guesses))
 
 #     Number of questions asked : NA 
@@ -897,15 +924,14 @@ f.write('\n' + '[Number of guesses] = ' + str(guesses))
 #     Number of hidden presents found : Easy presents collected, Hidden presents collected, Total presents collected
 f.write('\n' + '[Presents collected] = ' + str(i))
 #TODO
-f.write('\n' + '[Easy presents collected] = ' + str(i))
-f.write('\n' + '[Hidden presents collected] = ' + str(i))
+f.write('\n' + '[Easy presents collected] = ' + str(i - hidden))
+f.write('\n' + '[Hidden presents collected] = ' + str(hidden))
 
 #     If the objects were mapped to their correct use : Present behind axe, key collected
 # TODO
 f.write('\n' + '[Objects mapped to correct use] = ' + str(successful_manipulations))
 
 #     Time spent exploring the game : Time stamps  
-
 f.write('\n' + str(datetime.now()) + ' , session complete')
 
 f.close()
