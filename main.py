@@ -1,20 +1,25 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
 try:
     import pygame_sdl2
     pygame_sdl2.import_as_pygame()
+    LOG_DIR = "/sdcard/CA"
 except ImportError:
+    LOG_DIR = "./"
     pass
 
 import pygame, sys, random, time, pygame_textinput
 from random import randint
 from pygame.locals import*
 # import speech_recognition as sr
+import os
 from os import path
 
-import moviepy
+# import moviepy
 # print(moviepy.__file__)
 
-user_input = input("Participant ID: ")
-
+#user_input = input("Participant ID: ")
+user_input = "p"
 # try:
 #         import android
 # except Import:
@@ -62,12 +67,11 @@ pygame.display.set_caption("Curiosity")
 bg = pygame.image.load("assets/bg.png")
 # overlay = pygame.image.load("assets/overlay.png")
 
-#!/usr/bin/python3
 
 pygame.init()
 
 # Create TextInput-object
-textinput = pygame_textinput.TextInput()
+# textinput = pygame_textinput.TextInput()
 
 # rectangleA = pygame.rect.Rect(randint(0, SCREEN_WIDTH - 20), randint(0, SCREEN_HEIGHT - 20), 17, 17)
 # rectangleB = pygame.rect.Rect(randint(0, SCREEN_WIDTH - 20), randint(0, SCREEN_HEIGHT - 20), 17, 17)
@@ -284,639 +288,645 @@ running = True
 
 #start time logging
 from datetime import datetime
-f = open('log.txt','a')
-f.write('\n' + str(datetime.now()) + ' , session start')
-f.write('\n' + user_input)
-f.close()
-
-while running:
-
-    # - events -
-
-    for event in pygame.event.get():
-        if event.type == pygame.QUIT:
-                running = False
-
-        elif event.type == pygame.MOUSEBUTTONDOWN:
-                
-
-                
-
-                if event.button == 1:
-
-
-                        f = open('log.txt','a')
-                        f.write('\n' + '[Click Record] = ' + str(event.pos))
-                        f.close()  
-
-                        # drag the hammer
-                        if hammerfab.collidepoint(event.pos) and overlayOn == False:
-                                hammerfab_dragging = True
-                                mouse_x, mouse_y = event.pos
-                                offset_x = hammerfab.x - mouse_x
-                                offset_y = hammerfab.y - mouse_y
-                                print ('manipulation')
-                                number_of_manipulations += 1
-
-
-                        #drag the keys
-                        if keyfab.collidepoint(event.pos) and overlayOn == False:
-                                keyfab_dragging = True
-                                mouse_x, mouse_y = event.pos
-                                offset_x = keyfab.x - mouse_x
-                                offset_y = keyfab.y - mouse_y
-                                print ('manipulation')
-                                number_of_manipulations += 1
-
-                        #drag the wclock
-                        if wclockfab.collidepoint(event.pos) and overlayOn == False:
-                                wclockfab_dragging = True
-                                mouse_x, mouse_y = event.pos
-                                offset_x = wclockfab.x - mouse_x
-                                offset_y = wclockfab.y - mouse_y
-                                print ('manipulation')
-                                number_of_manipulations += 1        
-
-
-                        #Collecting a present
-                        if presentImage0.collidepoint(event.pos) and drum_visible == False and overlayOn == False:
-                                mouse_x, mouse_y = event.pos
-                                #Log present collection
-                                f = open('log.txt','a')
-                                f.write('\n' + 'Found present' + str(i))
-                                f.close()
-                                i += 1
-                                presentImage0.x = 2000
-                                presentImage0.y = 2000
-                                print('working')
-
-                                #play sound
-                                blip.play()
-                                print ('playing')
-                                #time.sleep(0.5)
-
-                                time.sleep(0.5)
-                                overlayfab.x = 0
-                                overlayfab.y = 0
-                                
-                                collectedPresentImage0.x = 601
-                                collectedPresentImage0.y = 312
-                                overlayguess.x = 505
-                                overlayguess.y = 512
-                                overlayskip.x = 689
-                                overlayskip.y = 512
-
-                                hidden += 1
-
-                                overlayOn = True
-
-                         #Collecting a present
-                        if presentImage1.collidepoint(event.pos) and chest_visible == False and overlayOn == False:
-                                mouse_x, mouse_y = event.pos
-                                #Log present collection
-                                f = open('log.txt','a')
-                                f.write('\n' + 'Found present' + str(i))
-                                f.close()
-                                i += 1
-
-                                #play sound
-                                blip.play()
-                                print ('playing')
-                                #time.sleep(1)
-
-                                #ugly solution to make present disappear
-                                presentImage1.x = 2000
-                                presentImage1.y = 2000
-                                print('working')
-
-                                time.sleep(0.5)
-                                overlayfab.x = 0
-                                overlayfab.y = 0
-                                
-                                collectedPresentImage1.x = 601
-                                collectedPresentImage1.y = 312
-                                overlayguess.x = 505
-                                overlayguess.y = 512
-                                overlayskip.x = 689
-                                overlayskip.y = 512
-
-                                overlayOn = True
-
-                                hidden += 1
-
-                         #Collecting a present
-                        if presentImage2.collidepoint(event.pos) and overlayOn == False:
-                                mouse_x, mouse_y = event.pos
-                                #Log present collection
-                                f = open('log.txt','a')
-                                f.write('\n' + 'Found present' + str(i))
-                                f.close()
-                                i += 1
-                                presentImage2.x = 2000
-                                presentImage2.y = 2000
-                                print('working')
-
-                                #play sound
-                                blip.play()
-                                print ('playing')
-                                #time.sleep(0.5)
-
-                                time.sleep(0.5)
-                                overlayfab.x = 0
-                                overlayfab.y = 0
-                                
-                                collectedPresentImage2.x = 601
-                                collectedPresentImage2.y = 312
-                                overlayguess.x = 505
-                                overlayguess.y = 512
-                                overlayskip.x = 689
-                                overlayskip.y = 512
-
-                                overlayOn = True
-
-                         #Collecting a present
-                        if presentImage3.collidepoint(event.pos) and overlayOn == False:
-                                mouse_x, mouse_y = event.pos
-                                #Log present collection
-                                f = open('log.txt','a')
-                                f.write('\n' + 'Found present' + str(i))
-                                f.close()       
-                                i += 1
-                                presentImage3.x = 2000
-                                presentImage3.y = 2000
-                                print('working')
-
-                                #play sound
-                                blip.play()
-                                print ('playing')
-                                #time.sleep(0.5)
-
-                                time.sleep(0.5)
-                                overlayfab.x = 0
-                                overlayfab.y = 0
-                                
-                                collectedPresentImage3.x = 601
-                                collectedPresentImage3.y = 312
-                                overlayguess.x = 505
-                                overlayguess.y = 512
-                                overlayskip.x = 689
-                                overlayskip.y = 512
-
-                                overlayOn = True
-
-
-                         #Collecting a present
-                        if presentImage4.collidepoint(event.pos) and overlayOn == False:
-                                mouse_x, mouse_y = event.pos
-                                #Log present collection
-                                f = open('log.txt','a')
-                                f.write('\n' + 'Found present' + str(i))
-                                f.close()
-                                i += 1
-                                presentImage4.x = 2000
-                                presentImage4.y = 2000
-                                print('working')
-
-                                #play sound
-                                blip.play()
-                                print ('playing')
-                                #time.sleep(0.5)
-
-                                time.sleep(0.5)
-                                overlayfab.x = 0
-                                overlayfab.y = 0
-                                
-                                collectedPresentImage4.x = 601
-                                collectedPresentImage4.y = 312
-                                overlayguess.x = 505
-                                overlayguess.y = 512
-                                overlayskip.x = 689
-                                overlayskip.y = 512
-
-                                overlayOn = True
-
-                         #Collecting a present
-                        if presentImage5.collidepoint(event.pos) and overlayOn == False:
-                                mouse_x, mouse_y = event.pos
-                                #Log present collection
-                                f = open('log.txt','a')
-                                f.write('\n' + 'Found present' + str(i))
-                                f.close()
-                                i += 1
-                                presentImage5.x = 2000
-                                presentImage5.y = 2000
-                                print('working')
-
-                                #play sound
-                                
-                                blip.play()
-                                print ('playing')
-
-                                time.sleep(0.5)
-                                overlayfab.x = 0
-                                overlayfab.y = 0
-                                
-                                collectedPresentImage5.x = 601
-                                collectedPresentImage5.y = 312
-                                overlayguess.x = 505
-                                overlayguess.y = 512
-                                overlayskip.x = 689
-                                overlayskip.y = 512
-
-                                overlayOn = True
-                                
-
-                        #Collecting a present
-                        if presentImage6.collidepoint(event.pos) and overlayOn == False:
-                                mouse_x, mouse_y = event.pos
-                                #Log present collection
-                                f = open('log.txt','a')
-                                f.write('\n' + 'Found present' + str(i))
-                                f.close()
-                                i += 1
-                                presentImage6.x = 2000
-                                presentImage6.y = 2000
-                                print('working')
-
-                                #play sound
-                                blip.play()
-                                print ('playing')
-
-                                time.sleep(0.5)
-                                overlayfab.x = 0
-                                overlayfab.y = 0
-                                
-                                collectedPresentImage6.x = 601
-                                collectedPresentImage6.y = 312
-                                overlayguess.x = 505
-                                overlayguess.y = 512
-                                overlayskip.x = 689
-                                overlayskip.y = 512
-
-                                overlayOn = True
-
-                        #Collecting a present
-                        if presentImage7.collidepoint(event.pos) and overlayOn == False:
-                                mouse_x, mouse_y = event.pos
-                                #Log present collection
-                                f = open('log.txt','a')
-                                f.write('\n' + 'Found present ' + str(i))
-                                f.close()
-                                i += 1
-                                presentImage7.x = 2000
-                                presentImage7.y = 2000
-                                print('working')
-
-                                #play sound
-                                blip.play()
-                                print ('playing')
-
-                                time.sleep(0.5)
-                                overlayfab.x = 0
-                                overlayfab.y = 0
-                                
-                                collectedPresentImage7.x = 601
-                                collectedPresentImage7.y = 312
-                                overlayguess.x = 505
-                                overlayguess.y = 512
-                                overlayskip.x = 689
-                                overlayskip.y = 512
-
-                                overlayOn = True
-
-                        #Collecting a present
-                        if presentImage8.collidepoint(event.pos) and overlayOn == False:
-                                mouse_x, mouse_y = event.pos
-                                #Log present collection
-                                f = open('log.txt','a')
-                                f.write('\n' + 'Found present ' + str(i))
-                                f.close()
-                                i += 1
-                                presentImage8.x = 2000
-                                presentImage8.y = 2000
-
-                                #play sound
-                                blip.play()
-                                
-                                time.sleep(0.5)
-                                overlayfab.x = 0
-                                overlayfab.y = 0
-                                
-                                collectedPresentImage8.x = 601
-                                collectedPresentImage8.y = 312
-                                overlayguess.x = 505
-                                overlayguess.y = 512
-                                overlayskip.x = 689
-                                overlayskip.y = 512
-
-                                overlayOn = True
-
-                        #Skipping the guessing, erasing the overlay
-                        if overlayskip.collidepoint(event.pos):
-                                mouse_x, mouse_y = event.pos
-                                print('skipping')
-                                #Log skipping time - incomplete
-                                # f = open('log.txt','a')
-                                # f.write('\n' + 'Found present' + str(i))
-                                # f.close()
-                                
-                                overlayfab.x = 2000
-                                overlayfab.y = 2000
-                                collectedPresentImage0.x = collectedPresentImage1.x = collectedPresentImage2.x = collectedPresentImage3.x = collectedPresentImage4.x = collectedPresentImage5.x = collectedPresentImage6.x = collectedPresentImage7.x = collectedPresentImage8.x = collectedPresentImage9.x = 2000
-                                collectedPresentImage0.y = collectedPresentImage1.y = collectedPresentImage2.y = collectedPresentImage3.y = collectedPresentImage4.y = collectedPresentImage5.y = collectedPresentImage6.y = collectedPresentImage7.y = collectedPresentImage8.y = collectedPresentImage9.y = 2000
-                                overlayguess.x = 2000
-                                overlayguess.y = 2000
-                                overlayskip.x = 2000
-                                overlayskip.y = 2000
-
-                                overlayOn = False
-
-                        if overlayguess.collidepoint(event.pos):
-                                mouse_x, mouse_y = event.pos
-                                print('guessing')
-                                #Log skipping time - incomplete
-                                # f = open('log.txt','a')
-                                # f.write('\n' + 'Found present' + str(i))
-                                # f.close()
-                                guesses += 1
-
-                                overlayskip.x = 2000
-                                overlayskip.y = 2000
-                                overlayguessdone.x = 689
-                                overlayguessdone.y = 512
-
-                        if overlayguessdone.collidepoint(event.pos):
-                                mouse_x, mouse_y = event.pos
-                                print('done guessing')
-                                #Log skipping time - incomplete
-                                # f = open('log.txt','a')
-                                # f.write('\n' + 'Found present' + str(i))
-                                # f.close()
-                                
-                                overlayfab.x = 2000
-                                overlayfab.y = 2000
-                                collectedPresentImage0.x = collectedPresentImage1.x = collectedPresentImage2.x = collectedPresentImage3.x = collectedPresentImage4.x = collectedPresentImage5.x = collectedPresentImage6.x = collectedPresentImage7.x = collectedPresentImage8.x = collectedPresentImage9.x = 2000
-                                collectedPresentImage0.y = collectedPresentImage1.y = collectedPresentImage2.y = collectedPresentImage3.y = collectedPresentImage4.y = collectedPresentImage5.y = collectedPresentImage6.y = collectedPresentImage7.y = collectedPresentImage8.y = collectedPresentImage9.y = 2000
-                                overlayguess.x = 2000
-                                overlayguess.y = 2000
-                                overlayskip.x = 2000
-                                overlayskip.y = 2000
-                                overlayguessdone.x = 2000
-                                overlayguessdone.y = 2000
-
-                                overlayOn = False
-
-
-
-                        #Collecting a present
-                        if presentImage9.collidepoint(event.pos) and clock_unmoved == False:
-                                mouse_x, mouse_y = event.pos
-                                #Log present collection
-                                f = open('log.txt','a')
-                                f.write('\n' + 'Found present ' + str(i))
-                                f.close()
-                                i += 1
-                                presentImage9.x = 2000
-                                presentImage9.y = 2000
-                                print('workinghid')
-
-                                #play sound
-                                blip.play()
-                                print ('playing')
-                                #time.sleep(0.5)
-
-                                time.sleep(0.5)
-                                overlayfab.x = 0
-                                overlayfab.y = 0
-                                
-                                collectedPresentImage9.x = 601
-                                collectedPresentImage9.y = 312
-                                overlayguess.x = 505
-                                overlayguess.y = 512
-                                overlayskip.x = 689
-                                overlayskip.y = 512
-
-                                overlayOn = True
-
-                                hidden += 1
-
-                        #Shake0
-                        if collectedPresentImage0.collidepoint(event.pos):
-                                mouse_x, mouse_y = event.pos
-                                #play sound
-                                pig.play()
-                                sensory_interactions_sound += 1
-
-                        #Shake1
-                        if collectedPresentImage1.collidepoint(event.pos):
-                                mouse_x, mouse_y = event.pos
-                                #play sound
-                                ball.play()
-                                sensory_interactions_sound += 1
-
-                        #Shake2
-                        if collectedPresentImage2.collidepoint(event.pos):
-                                mouse_x, mouse_y = event.pos
-                                #play sound
-                                bike.play()
-                                sensory_interactions_sound += 1
-
-                        #Shake3
-                        if collectedPresentImage3.collidepoint(event.pos):
-                                mouse_x, mouse_y = event.pos
-                                #play sound
-                                horn.play()
-                                sensory_interactions_sound += 1
-
-                        #Shake4
-                        if collectedPresentImage4.collidepoint(event.pos):
-                                mouse_x, mouse_y = event.pos
-                                #play sound
-                                cloth.play()
-                                sensory_interactions_sound += 1
-
-                        #Shake5
-                        if collectedPresentImage5.collidepoint(event.pos):
-                                mouse_x, mouse_y = event.pos
-                                #play sound
-                                sad.play()
-                                sensory_interactions_sound += 1
-
-                        #Shake6
-                        if collectedPresentImage6.collidepoint(event.pos):
-                                mouse_x, mouse_y = event.pos
-                                #play sound
-                                coins.play()
-                                sensory_interactions_sound += 1
-
-                        #Shake7
-                        if collectedPresentImage7.collidepoint(event.pos):
-                                mouse_x, mouse_y = event.pos
-                                #play sound
-                                dog.play()
-                                sensory_interactions_sound += 1
-
-                        #Shake8
-                        if collectedPresentImage8.collidepoint(event.pos):
-                                mouse_x, mouse_y = event.pos
-                                #play sound
-                                #print ('collectedPresentImage8')
-                                rattle.play()
-                                sensory_interactions_sound += 1
-
-
-                        #Shake9
-                        if collectedPresentImage9.collidepoint(event.pos):
-                                mouse_x, mouse_y = event.pos
-                                #play sound
-                                train.play()
-                                sensory_interactions_sound += 1
-
-                        
-
-                        #Done 
-                        if donefab.collidepoint(event.pos):
-                                mouse_x, mouse_y = event.pos
-                                #Log present collection
-                                running = False
-                                print('done')
-
-                        
-                                
-        elif event.type == pygame.MOUSEBUTTONUP:
-                if event.button == 1:            
-                        hammerfab_dragging = False
-                        keyfab_dragging = False
-                        wclockfab_dragging = False
-
-                if keyfab.x < 915 and keyfab.x > 875 and keyfab.y < 642 and keyfab.y > 602:
-                        chestfab.x = 2000
-                        chestfab.y = 2000
-                        chest_visible = False
-                        # objects_manipulated += 1
-
-                        magic.play()
-                        # print ('playing')
-                        magic = empty
-                        # successful_manipulations += 1
-
-                if hammerfab.x < 625 and hammerfab.x > 496 and hammerfab.y < 717 and hammerfab.y > 542:
-                        drumfab.x = 2000
-                        drumfab.y = 2000
-                        drum_visible = False
-                        # objects_manipulated +=1
-
-                        chop.play()
-                        # print ('playing')
-                        chop = empty
-                        # successful_manipulations += 1
-
-
-                if (wclockfab.x < 725 or wclockfab.x > 846 or wclockfab.y > 105) and overlayOn == False:
-                        # drumfab.x = 2000
-                        # drumfab.y = 2000
-                        clock_unmoved = False
-                        # objects_manipulated +=1
-                        print ('clock moved')
-                        # successful_manipulations += 1
-
-        elif event.type == pygame.MOUSEMOTION:
-                if hammerfab_dragging:
-                        mouse_x, mouse_y = event.pos
-                        hammerfab.x = mouse_x + offset_x
-                        hammerfab.y = mouse_y + offset_y  
-
-                if keyfab_dragging:
-                        mouse_x, mouse_y = event.pos
-                        keyfab.x = mouse_x + offset_x
-                        keyfab.y = mouse_y + offset_y  
-
-                if wclockfab_dragging:
-                        mouse_x, mouse_y = event.pos
-                        wclockfab.x = mouse_x + offset_x
-                        wclockfab.y = mouse_y + offset_y 
-
-
-                  # #SPEECH RECOGNITION SEGMENT -- NOT FOR DEMO
-                                # # obtain audio from the microphone
-                                # import speech_recognition as sr
-                                # r = sr.Recognizer()
-                                # with sr.Microphone() as source:
-                                #         print("Say something!")
-                                #         audio = r.listen(source)
-
-                                # # obtain path to "english.wav" in the same folder as this script
-                                
-                                # AUDIO_FILE = path.join(path.dirname(path.realpath(__file__)), "english.wav")
-                                # # AUDIO_FILE = path.join(path.dirname(path.realpath(__file__)), "french.aiff")
-                                # # AUDIO_FILE = path.join(path.dirname(path.realpath(__file__)), "chinese.flac")
-
-                                # # use the audio file as the audio source
-                                # r = sr.Recognizer()
-                                # with sr.AudioFile(AUDIO_FILE) as source:
-                                #         audio = r.record(source)  # read the entire audio file
-                                #         print(audio)
-
-                                # # recognize speech using Sphinx
-                                # try:
-                                #         print("Sphinx thinks you said " + r.recognize_sphinx(audio))
-                                # except sr.UnknownValueError:
-                                #         print("Sphinx could not understand audio")
-                                # except sr.RequestError as e:
-                                #         print("Sphinx error; {0}".format(e))
-                                                 
-
-    # - updates (without draws) -
-
-    # empty
-
-    # - draws (without updates) -
-
-    screen.fill(WHITE)
-    screen.blit(bg, (0, 0))
-
-    # pygame.draw.rect(screen, RED, rectangleA)
-    # pygame.draw.rect(screen, BLACK, rectangleB)
-    screen.blit(img0, presentImage0)
-    screen.blit(img1, presentImage1)
-    screen.blit(img2, presentImage2)
-    screen.blit(shelf, shelffab)
-    screen.blit(img3, presentImage3)
-    screen.blit(img4, presentImage4)
-    screen.blit(img6, presentImage6)
-    screen.blit(tree, treefab)
-    screen.blit(img5, presentImage5)
-    screen.blit(img7, presentImage7)
-    screen.blit(img8, presentImage8)
-    screen.blit(img9, presentImage9)
-    # screen.blit(img10, presentImage10)
-    # screen.blit(img11, presentImage11)
-    screen.blit(drum, drumfab)
-    screen.blit(chest, chestfab)
-    screen.blit(wclock, wclockfab)
-    screen.blit(hammer, hammerfab)
-    screen.blit(key, keyfab)
-    screen.blit(done, donefab)
-    screen.blit(overlay, overlayfab)
-    screen.blit(oguess, overlayguess)
-    screen.blit(oskip, overlayskip)
-    screen.blit(oguessdone, overlayguessdone)
-    screen.blit(img0, collectedPresentImage0)
-    screen.blit(img1, collectedPresentImage1)
-    screen.blit(img2, collectedPresentImage2)
-    screen.blit(img3, collectedPresentImage3)
-    screen.blit(img4, collectedPresentImage4)
-    screen.blit(img5, collectedPresentImage5)
-    screen.blit(img6, collectedPresentImage6)
-    screen.blit(img7, collectedPresentImage7)
-    screen.blit(img8, collectedPresentImage8)
-    screen.blit(img9, collectedPresentImage9)  
-
-    pygame.display.flip()
-
-    # - constant game speed / FPS -
-
-    clock.tick(FPS)
+
+
+
+
+try:
+    os.mkdir(LOG_DIR)
+    print "directory created"
+except:
+    print "skip creating dir"
+    pass
+
+with open(os.path.join(LOG_DIR,"log.txt"),"w+") as f:
+    f.write('\n' + str(datetime.now()) + ' , session start')
+    f.write('\n' + str(user_input))
+    f.flush()
+
+    print "logfile created", f
+
+    while running:
+
+        # - events -
+
+        for event in pygame.event.get():
+        #event = pygame.event.wait()
+
+            if event.type == pygame.QUIT:
+                    running = False
+
+            elif event.type == pygame.MOUSEBUTTONDOWN:
+                    
+
+                    
+
+                    if event.button == 1:
+
+
+                            f.write('\n' + '[Click Record] = ' + str(event.pos))
+                            f.flush()  
+
+                            # drag the hammer
+                            if hammerfab.collidepoint(event.pos) and overlayOn == False:
+                                    hammerfab_dragging = True
+                                    mouse_x, mouse_y = event.pos
+                                    offset_x = hammerfab.x - mouse_x
+                                    offset_y = hammerfab.y - mouse_y
+                                    print ('manipulation')
+                                    number_of_manipulations += 1
+
+
+                            #drag the keys
+                            if keyfab.collidepoint(event.pos) and overlayOn == False:
+                                    keyfab_dragging = True
+                                    mouse_x, mouse_y = event.pos
+                                    offset_x = keyfab.x - mouse_x
+                                    offset_y = keyfab.y - mouse_y
+                                    print ('manipulation')
+                                    number_of_manipulations += 1
+
+                            #drag the wclock
+                            if wclockfab.collidepoint(event.pos) and overlayOn == False:
+                                    wclockfab_dragging = True
+                                    mouse_x, mouse_y = event.pos
+                                    offset_x = wclockfab.x - mouse_x
+                                    offset_y = wclockfab.y - mouse_y
+                                    print ('manipulation')
+                                    number_of_manipulations += 1        
+
+
+                            #Collecting a present
+                            if presentImage0.collidepoint(event.pos) and drum_visible == False and overlayOn == False:
+                                    mouse_x, mouse_y = event.pos
+                                    #Log present collection
+                                    
+                                    f.write('\n' + 'Found present' + str(i))
+                                    f.flush()
+                                    i += 1
+                                    presentImage0.x = 2000
+                                    presentImage0.y = 2000
+                                    print('working')
+
+                                    #play sound
+                                    blip.play()
+                                    print ('playing')
+                                    #time.sleep(0.5)
+
+                                    time.sleep(0.5)
+                                    overlayfab.x = 0
+                                    overlayfab.y = 0
+                                    
+                                    collectedPresentImage0.x = 601
+                                    collectedPresentImage0.y = 312
+                                    overlayguess.x = 505
+                                    overlayguess.y = 512
+                                    overlayskip.x = 689
+                                    overlayskip.y = 512
+
+                                    hidden += 1
+
+                                    overlayOn = True
+
+                             #Collecting a present
+                            if presentImage1.collidepoint(event.pos) and chest_visible == False and overlayOn == False:
+                                    mouse_x, mouse_y = event.pos
+                                    #Log present collection
+                                    
+                                    f.write('\n' + 'Found present' + str(i))
+                                    f.flush()
+                                    i += 1
+
+                                    #play sound
+                                    blip.play()
+                                    print ('playing')
+                                    #time.sleep(1)
+
+                                    #ugly solution to make present disappear
+                                    presentImage1.x = 2000
+                                    presentImage1.y = 2000
+                                    print('working')
+
+                                    time.sleep(0.5)
+                                    overlayfab.x = 0
+                                    overlayfab.y = 0
+                                    
+                                    collectedPresentImage1.x = 601
+                                    collectedPresentImage1.y = 312
+                                    overlayguess.x = 505
+                                    overlayguess.y = 512
+                                    overlayskip.x = 689
+                                    overlayskip.y = 512
+
+                                    overlayOn = True
+
+                                    hidden += 1
+
+                             #Collecting a present
+                            if presentImage2.collidepoint(event.pos) and overlayOn == False:
+                                    mouse_x, mouse_y = event.pos
+                                    #Log present collection
+                                    f.write('\n' + 'Found present' + str(i))
+                                    f.flush()
+                                    i += 1
+                                    presentImage2.x = 2000
+                                    presentImage2.y = 2000
+                                    print('working')
+
+                                    #play sound
+                                    blip.play()
+                                    print ('playing')
+                                    #time.sleep(0.5)
+
+                                    time.sleep(0.5)
+                                    overlayfab.x = 0
+                                    overlayfab.y = 0
+                                    
+                                    collectedPresentImage2.x = 601
+                                    collectedPresentImage2.y = 312
+                                    overlayguess.x = 505
+                                    overlayguess.y = 512
+                                    overlayskip.x = 689
+                                    overlayskip.y = 512
+
+                                    overlayOn = True
+
+                             #Collecting a present
+                            if presentImage3.collidepoint(event.pos) and overlayOn == False:
+                                    mouse_x, mouse_y = event.pos
+                                    #Log present collection
+                                    f.write('\n' + 'Found present' + str(i))
+                                    f.flush()      
+                                    i += 1
+                                    presentImage3.x = 2000
+                                    presentImage3.y = 2000
+                                    print('working')
+
+                                    #play sound
+                                    blip.play()
+                                    print ('playing')
+                                    #time.sleep(0.5)
+
+                                    time.sleep(0.5)
+                                    overlayfab.x = 0
+                                    overlayfab.y = 0
+                                    
+                                    collectedPresentImage3.x = 601
+                                    collectedPresentImage3.y = 312
+                                    overlayguess.x = 505
+                                    overlayguess.y = 512
+                                    overlayskip.x = 689
+                                    overlayskip.y = 512
+
+                                    overlayOn = True
+
+
+                             #Collecting a present
+                            if presentImage4.collidepoint(event.pos) and overlayOn == False:
+                                    mouse_x, mouse_y = event.pos
+                                    #Log present collection
+                                    f.write('\n' + 'Found present' + str(i))
+                                    f.flush()
+                                    i += 1
+                                    presentImage4.x = 2000
+                                    presentImage4.y = 2000
+                                    print('working')
+
+                                    #play sound
+                                    blip.play()
+                                    print ('playing')
+                                    #time.sleep(0.5)
+
+                                    time.sleep(0.5)
+                                    overlayfab.x = 0
+                                    overlayfab.y = 0
+                                    
+                                    collectedPresentImage4.x = 601
+                                    collectedPresentImage4.y = 312
+                                    overlayguess.x = 505
+                                    overlayguess.y = 512
+                                    overlayskip.x = 689
+                                    overlayskip.y = 512
+
+                                    overlayOn = True
+
+                             #Collecting a present
+                            if presentImage5.collidepoint(event.pos) and overlayOn == False:
+                                    mouse_x, mouse_y = event.pos
+                                    #Log present collection
+                                    f.write('\n' + 'Found present' + str(i))
+                                    f.flush()
+                                    i += 1
+                                    presentImage5.x = 2000
+                                    presentImage5.y = 2000
+                                    print('working')
+
+                                    #play sound
+                                    
+                                    blip.play()
+                                    print ('playing')
+
+                                    time.sleep(0.5)
+                                    overlayfab.x = 0
+                                    overlayfab.y = 0
+                                    
+                                    collectedPresentImage5.x = 601
+                                    collectedPresentImage5.y = 312
+                                    overlayguess.x = 505
+                                    overlayguess.y = 512
+                                    overlayskip.x = 689
+                                    overlayskip.y = 512
+
+                                    overlayOn = True
+                                    
+
+                            #Collecting a present
+                            if presentImage6.collidepoint(event.pos) and overlayOn == False:
+                                    mouse_x, mouse_y = event.pos
+                                    #Log present collection
+                                    f.write('\n' + 'Found present' + str(i))
+                                    f.flush()
+                                    i += 1
+                                    presentImage6.x = 2000
+                                    presentImage6.y = 2000
+                                    print('working')
+
+                                    #play sound
+                                    blip.play()
+                                    print ('playing')
+
+                                    time.sleep(0.5)
+                                    overlayfab.x = 0
+                                    overlayfab.y = 0
+                                    
+                                    collectedPresentImage6.x = 601
+                                    collectedPresentImage6.y = 312
+                                    overlayguess.x = 505
+                                    overlayguess.y = 512
+                                    overlayskip.x = 689
+                                    overlayskip.y = 512
+
+                                    overlayOn = True
+
+                            #Collecting a present
+                            if presentImage7.collidepoint(event.pos) and overlayOn == False:
+                                    mouse_x, mouse_y = event.pos
+                                    #Log present collection
+                                    f.write('\n' + 'Found present' + str(i))
+                                    f.flush()
+                                    i += 1
+                                    presentImage7.x = 2000
+                                    presentImage7.y = 2000
+                                    print('working')
+
+                                    #play sound
+                                    blip.play()
+                                    print ('playing')
+
+                                    time.sleep(0.5)
+                                    overlayfab.x = 0
+                                    overlayfab.y = 0
+                                    
+                                    collectedPresentImage7.x = 601
+                                    collectedPresentImage7.y = 312
+                                    overlayguess.x = 505
+                                    overlayguess.y = 512
+                                    overlayskip.x = 689
+                                    overlayskip.y = 512
+
+                                    overlayOn = True
+
+                            #Collecting a present
+                            if presentImage8.collidepoint(event.pos) and overlayOn == False:
+                                    mouse_x, mouse_y = event.pos
+                                    #Log present collection
+                                    f.write('\n' + 'Found present' + str(i))
+                                    f.flush()
+                                    i += 1
+                                    presentImage8.x = 2000
+                                    presentImage8.y = 2000
+
+                                    #play sound
+                                    blip.play()
+                                    
+                                    time.sleep(0.5)
+                                    overlayfab.x = 0
+                                    overlayfab.y = 0
+                                    
+                                    collectedPresentImage8.x = 601
+                                    collectedPresentImage8.y = 312
+                                    overlayguess.x = 505
+                                    overlayguess.y = 512
+                                    overlayskip.x = 689
+                                    overlayskip.y = 512
+
+                                    overlayOn = True
+
+                            #Skipping the guessing, erasing the overlay
+                            if overlayskip.collidepoint(event.pos):
+                                    mouse_x, mouse_y = event.pos
+                                    print('skipping')
+                                    #Log skipping time - incomplete
+                                    # f = open('log.txt','a')
+                                    # f.write('\n' + 'Found present' + str(i))
+                                    # f.close()
+                                    
+                                    overlayfab.x = 2000
+                                    overlayfab.y = 2000
+                                    collectedPresentImage0.x = collectedPresentImage1.x = collectedPresentImage2.x = collectedPresentImage3.x = collectedPresentImage4.x = collectedPresentImage5.x = collectedPresentImage6.x = collectedPresentImage7.x = collectedPresentImage8.x = collectedPresentImage9.x = 2000
+                                    collectedPresentImage0.y = collectedPresentImage1.y = collectedPresentImage2.y = collectedPresentImage3.y = collectedPresentImage4.y = collectedPresentImage5.y = collectedPresentImage6.y = collectedPresentImage7.y = collectedPresentImage8.y = collectedPresentImage9.y = 2000
+                                    overlayguess.x = 2000
+                                    overlayguess.y = 2000
+                                    overlayskip.x = 2000
+                                    overlayskip.y = 2000
+
+                                    overlayOn = False
+
+                            if overlayguess.collidepoint(event.pos):
+                                    mouse_x, mouse_y = event.pos
+                                    print('guessing')
+                                    #Log skipping time - incomplete
+                                    # f = open('log.txt','a')
+                                    # f.write('\n' + 'Found present' + str(i))
+                                    # f.close()
+                                    guesses += 1
+
+                                    overlayskip.x = 2000
+                                    overlayskip.y = 2000
+                                    overlayguessdone.x = 689
+                                    overlayguessdone.y = 512
+
+                            if overlayguessdone.collidepoint(event.pos):
+                                    mouse_x, mouse_y = event.pos
+                                    print('done guessing')
+                                    #Log skipping time - incomplete
+                                    # f = open('log.txt','a')
+                                    # f.write('\n' + 'Found present' + str(i))
+                                    # f.close()
+                                    
+                                    overlayfab.x = 2000
+                                    overlayfab.y = 2000
+                                    collectedPresentImage0.x = collectedPresentImage1.x = collectedPresentImage2.x = collectedPresentImage3.x = collectedPresentImage4.x = collectedPresentImage5.x = collectedPresentImage6.x = collectedPresentImage7.x = collectedPresentImage8.x = collectedPresentImage9.x = 2000
+                                    collectedPresentImage0.y = collectedPresentImage1.y = collectedPresentImage2.y = collectedPresentImage3.y = collectedPresentImage4.y = collectedPresentImage5.y = collectedPresentImage6.y = collectedPresentImage7.y = collectedPresentImage8.y = collectedPresentImage9.y = 2000
+                                    overlayguess.x = 2000
+                                    overlayguess.y = 2000
+                                    overlayskip.x = 2000
+                                    overlayskip.y = 2000
+                                    overlayguessdone.x = 2000
+                                    overlayguessdone.y = 2000
+
+                                    overlayOn = False
+
+
+
+                            #Collecting a present
+                            if presentImage9.collidepoint(event.pos) and clock_unmoved == False:
+                                    mouse_x, mouse_y = event.pos
+                                    #Log present collection
+                                    f.write('\n' + 'Found present' + str(i))
+                                    f.flush()
+                                    i += 1
+                                    presentImage9.x = 2000
+                                    presentImage9.y = 2000
+                                    print('workinghid')
+
+                                    #play sound
+                                    blip.play()
+                                    print ('playing')
+                                    #time.sleep(0.5)
+
+                                    time.sleep(0.5)
+                                    overlayfab.x = 0
+                                    overlayfab.y = 0
+                                    
+                                    collectedPresentImage9.x = 601
+                                    collectedPresentImage9.y = 312
+                                    overlayguess.x = 505
+                                    overlayguess.y = 512
+                                    overlayskip.x = 689
+                                    overlayskip.y = 512
+
+                                    overlayOn = True
+
+                                    hidden += 1
+
+                            #Shake0
+                            if collectedPresentImage0.collidepoint(event.pos):
+                                    mouse_x, mouse_y = event.pos
+                                    #play sound
+                                    pig.play()
+                                    sensory_interactions_sound += 1
+
+                            #Shake1
+                            if collectedPresentImage1.collidepoint(event.pos):
+                                    mouse_x, mouse_y = event.pos
+                                    #play sound
+                                    ball.play()
+                                    sensory_interactions_sound += 1
+
+                            #Shake2
+                            if collectedPresentImage2.collidepoint(event.pos):
+                                    mouse_x, mouse_y = event.pos
+                                    #play sound
+                                    bike.play()
+                                    sensory_interactions_sound += 1
+
+                            #Shake3
+                            if collectedPresentImage3.collidepoint(event.pos):
+                                    mouse_x, mouse_y = event.pos
+                                    #play sound
+                                    horn.play()
+                                    sensory_interactions_sound += 1
+
+                            #Shake4
+                            if collectedPresentImage4.collidepoint(event.pos):
+                                    mouse_x, mouse_y = event.pos
+                                    #play sound
+                                    cloth.play()
+                                    sensory_interactions_sound += 1
+
+                            #Shake5
+                            if collectedPresentImage5.collidepoint(event.pos):
+                                    mouse_x, mouse_y = event.pos
+                                    #play sound
+                                    sad.play()
+                                    sensory_interactions_sound += 1
+
+                            #Shake6
+                            if collectedPresentImage6.collidepoint(event.pos):
+                                    mouse_x, mouse_y = event.pos
+                                    #play sound
+                                    coins.play()
+                                    sensory_interactions_sound += 1
+
+                            #Shake7
+                            if collectedPresentImage7.collidepoint(event.pos):
+                                    mouse_x, mouse_y = event.pos
+                                    #play sound
+                                    dog.play()
+                                    sensory_interactions_sound += 1
+
+                            #Shake8
+                            if collectedPresentImage8.collidepoint(event.pos):
+                                    mouse_x, mouse_y = event.pos
+                                    #play sound
+                                    #print ('collectedPresentImage8')
+                                    rattle.play()
+                                    sensory_interactions_sound += 1
+
+
+                            #Shake9
+                            if collectedPresentImage9.collidepoint(event.pos):
+                                    mouse_x, mouse_y = event.pos
+                                    #play sound
+                                    train.play()
+                                    sensory_interactions_sound += 1
+
+                            
+
+                            #Done 
+                            if donefab.collidepoint(event.pos):
+                                    mouse_x, mouse_y = event.pos
+                                    #Log present collection
+                                    running = False
+                                    print('done')
+
+                            
+                                    
+            elif event.type == pygame.MOUSEBUTTONUP:
+                    if event.button == 1:            
+                            hammerfab_dragging = False
+                            keyfab_dragging = False
+                            wclockfab_dragging = False
+
+                    if keyfab.x < 915 and keyfab.x > 875 and keyfab.y < 642 and keyfab.y > 602:
+                            chestfab.x = 2000
+                            chestfab.y = 2000
+                            chest_visible = False
+                            # objects_manipulated += 1
+
+                            magic.play()
+                            # print ('playing')
+                            magic = empty
+                            # successful_manipulations += 1
+
+                    if hammerfab.x < 625 and hammerfab.x > 496 and hammerfab.y < 717 and hammerfab.y > 542:
+                            drumfab.x = 2000
+                            drumfab.y = 2000
+                            drum_visible = False
+                            # objects_manipulated +=1
+
+                            chop.play()
+                            # print ('playing')
+                            chop = empty
+                            # successful_manipulations += 1
+
+
+                    if (wclockfab.x < 725 or wclockfab.x > 846 or wclockfab.y > 105) and overlayOn == False:
+                            # drumfab.x = 2000
+                            # drumfab.y = 2000
+                            clock_unmoved = False
+                            # objects_manipulated +=1
+                            print ('clock moved')
+                            # successful_manipulations += 1
+
+            elif event.type == pygame.MOUSEMOTION:
+                    if hammerfab_dragging:
+                            mouse_x, mouse_y = event.pos
+                            hammerfab.x = mouse_x + offset_x
+                            hammerfab.y = mouse_y + offset_y  
+
+                    if keyfab_dragging:
+                            mouse_x, mouse_y = event.pos
+                            keyfab.x = mouse_x + offset_x
+                            keyfab.y = mouse_y + offset_y  
+
+                    if wclockfab_dragging:
+                            mouse_x, mouse_y = event.pos
+                            wclockfab.x = mouse_x + offset_x
+                            wclockfab.y = mouse_y + offset_y 
+
+
+                      # #SPEECH RECOGNITION SEGMENT -- NOT FOR DEMO
+                                    # # obtain audio from the microphone
+                                    # import speech_recognition as sr
+                                    # r = sr.Recognizer()
+                                    # with sr.Microphone() as source:
+                                    #         print("Say something!")
+                                    #         audio = r.listen(source)
+
+                                    # # obtain path to "english.wav" in the same folder as this script
+                                    
+                                    # AUDIO_FILE = path.join(path.dirname(path.realpath(__file__)), "english.wav")
+                                    # # AUDIO_FILE = path.join(path.dirname(path.realpath(__file__)), "french.aiff")
+                                    # # AUDIO_FILE = path.join(path.dirname(path.realpath(__file__)), "chinese.flac")
+
+                                    # # use the audio file as the audio source
+                                    # r = sr.Recognizer()
+                                    # with sr.AudioFile(AUDIO_FILE) as source:
+                                    #         audio = r.record(source)  # read the entire audio file
+                                    #         print(audio)
+
+                                    # # recognize speech using Sphinx
+                                    # try:
+                                    #         print("Sphinx thinks you said " + r.recognize_sphinx(audio))
+                                    # except sr.UnknownValueError:
+                                    #         print("Sphinx could not understand audio")
+                                    # except sr.RequestError as e:
+                                    #         print("Sphinx error; {0}".format(e))
+                                                     
+
+        # - updates (without draws) -
+
+        # empty
+
+        # - draws (without updates) -
+
+        screen.fill(WHITE)
+        screen.blit(bg, (0, 0))
+
+        # pygame.draw.rect(screen, RED, rectangleA)
+        # pygame.draw.rect(screen, BLACK, rectangleB)
+        screen.blit(img0, presentImage0)
+        screen.blit(img1, presentImage1)
+        screen.blit(img2, presentImage2)
+        screen.blit(shelf, shelffab)
+        screen.blit(img3, presentImage3)
+        screen.blit(img4, presentImage4)
+        screen.blit(img6, presentImage6)
+        screen.blit(tree, treefab)
+        screen.blit(img5, presentImage5)
+        screen.blit(img7, presentImage7)
+        screen.blit(img8, presentImage8)
+        screen.blit(img9, presentImage9)
+        # screen.blit(img10, presentImage10)
+        # screen.blit(img11, presentImage11)
+        screen.blit(drum, drumfab)
+        screen.blit(chest, chestfab)
+        screen.blit(wclock, wclockfab)
+        screen.blit(hammer, hammerfab)
+        screen.blit(key, keyfab)
+        screen.blit(done, donefab)
+        screen.blit(overlay, overlayfab)
+        screen.blit(oguess, overlayguess)
+        screen.blit(oskip, overlayskip)
+        screen.blit(oguessdone, overlayguessdone)
+        screen.blit(img0, collectedPresentImage0)
+        screen.blit(img1, collectedPresentImage1)
+        screen.blit(img2, collectedPresentImage2)
+        screen.blit(img3, collectedPresentImage3)
+        screen.blit(img4, collectedPresentImage4)
+        screen.blit(img5, collectedPresentImage5)
+        screen.blit(img6, collectedPresentImage6)
+        screen.blit(img7, collectedPresentImage7)
+        screen.blit(img8, collectedPresentImage8)
+        screen.blit(img9, collectedPresentImage9)  
+
+        pygame.display.flip()
+
+        # - constant game speed / FPS -
+
+        clock.tick(FPS)
 
 # - end -
 
@@ -940,7 +950,8 @@ while running:
 
 from datetime import datetime
 
-f = open('log.txt','a')
+
+# f = open('log.txt','a')
 
 #     Interacting with novel sensory interactions / sensory experiences such as touch, sight, and sound - deviating from regular : Number of sound interactions 
 f.write('\n' + '[Sensory Interactions : sound] = ' + str(sensory_interactions_sound))
@@ -976,7 +987,8 @@ f.write('\n' + '[Objects mapped to correct use] = ' + str(successful_manipulatio
 #     Time spent exploring the game : Time stamps  
 f.write('\n' + str(datetime.now()) + ' , session complete')
 
-f.close()
+f.flush()
+# f.close()
 
 pygame.quit()
 
