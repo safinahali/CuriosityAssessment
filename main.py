@@ -4,7 +4,7 @@ try:
 except ImportError:
     pass
 
-import pygame, sys, random, time
+import pygame, sys, random, time, pygame_textinput
 from random import randint
 from pygame.locals import*
 # import speech_recognition as sr
@@ -12,6 +12,8 @@ from os import path
 
 import moviepy
 # print(moviepy.__file__)
+
+user_input = input("Participant ID: ")
 
 # try:
 #         import android
@@ -22,7 +24,6 @@ import moviepy
 
 SCREEN_WIDTH = 1280
 SCREEN_HEIGHT = 800
-
 
 #BLACK = (  0,   0,   0)
 WHITE = (255, 255, 255)
@@ -60,6 +61,13 @@ pygame.display.set_caption("Curiosity")
 #Background
 bg = pygame.image.load("assets/bg.png")
 # overlay = pygame.image.load("assets/overlay.png")
+
+#!/usr/bin/python3
+
+pygame.init()
+
+# Create TextInput-object
+textinput = pygame_textinput.TextInput()
 
 # rectangleA = pygame.rect.Rect(randint(0, SCREEN_WIDTH - 20), randint(0, SCREEN_HEIGHT - 20), 17, 17)
 # rectangleB = pygame.rect.Rect(randint(0, SCREEN_WIDTH - 20), randint(0, SCREEN_HEIGHT - 20), 17, 17)
@@ -233,6 +241,11 @@ overlayskip = oskip.get_rect()
 overlayskip.x = 2000
 overlayskip.y = 2000
 
+oguessdone = pygame.image.load('assets/oguessdone.png')
+overlayguessdone = oguessdone.get_rect()
+overlayguessdone.x = 2000
+overlayguessdone.y = 2000
+
 overlayOn = False
 
 #sounds
@@ -273,6 +286,7 @@ running = True
 from datetime import datetime
 f = open('log.txt','a')
 f.write('\n' + str(datetime.now()) + ' , session start')
+f.write('\n' + user_input)
 f.close()
 
 while running:
@@ -626,6 +640,33 @@ while running:
                                 # f.close()
                                 guesses += 1
 
+                                overlayskip.x = 2000
+                                overlayskip.y = 2000
+                                overlayguessdone.x = 689
+                                overlayguessdone.y = 512
+
+                        if overlayguessdone.collidepoint(event.pos):
+                                mouse_x, mouse_y = event.pos
+                                print('done guessing')
+                                #Log skipping time - incomplete
+                                # f = open('log.txt','a')
+                                # f.write('\n' + 'Found present' + str(i))
+                                # f.close()
+                                
+                                overlayfab.x = 2000
+                                overlayfab.y = 2000
+                                collectedPresentImage0.x = collectedPresentImage1.x = collectedPresentImage2.x = collectedPresentImage3.x = collectedPresentImage4.x = collectedPresentImage5.x = collectedPresentImage6.x = collectedPresentImage7.x = collectedPresentImage8.x = collectedPresentImage9.x = 2000
+                                collectedPresentImage0.y = collectedPresentImage1.y = collectedPresentImage2.y = collectedPresentImage3.y = collectedPresentImage4.y = collectedPresentImage5.y = collectedPresentImage6.y = collectedPresentImage7.y = collectedPresentImage8.y = collectedPresentImage9.y = 2000
+                                overlayguess.x = 2000
+                                overlayguess.y = 2000
+                                overlayskip.x = 2000
+                                overlayskip.y = 2000
+                                overlayguessdone.x = 2000
+                                overlayguessdone.y = 2000
+
+                                overlayOn = False
+
+
 
                         #Collecting a present
                         if presentImage9.collidepoint(event.pos) and clock_unmoved == False:
@@ -752,23 +793,23 @@ while running:
                         chestfab.x = 2000
                         chestfab.y = 2000
                         chest_visible = False
-                        objects_manipulated += 1
+                        # objects_manipulated += 1
 
                         magic.play()
                         # print ('playing')
                         magic = empty
-                        successful_manipulations += 1
+                        # successful_manipulations += 1
 
                 if hammerfab.x < 625 and hammerfab.x > 496 and hammerfab.y < 717 and hammerfab.y > 542:
                         drumfab.x = 2000
                         drumfab.y = 2000
                         drum_visible = False
-                        objects_manipulated +=1
+                        # objects_manipulated +=1
 
                         chop.play()
                         # print ('playing')
                         chop = empty
-                        successful_manipulations += 1
+                        # successful_manipulations += 1
 
 
                 if (wclockfab.x < 725 or wclockfab.x > 846 or wclockfab.y > 105) and overlayOn == False:
@@ -859,6 +900,7 @@ while running:
     screen.blit(overlay, overlayfab)
     screen.blit(oguess, overlayguess)
     screen.blit(oskip, overlayskip)
+    screen.blit(oguessdone, overlayguessdone)
     screen.blit(img0, collectedPresentImage0)
     screen.blit(img1, collectedPresentImage1)
     screen.blit(img2, collectedPresentImage2)

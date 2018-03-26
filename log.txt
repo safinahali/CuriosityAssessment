@@ -401,3 +401,774 @@ Found present0
 [Hidden presents collected] = 1
 [Objects mapped to correct use] = 3
 2018-03-21 21:09:05.178626 , session complete
+2018-03-21 23:51:36.246197 , session start
+[Click Record] = (867, 132)
+[Click Record] = (884, 143)
+Found present 0
+[Click Record] = (538, 545)
+[Click Record] = (564, 554)
+[Click Record] = (620, 325)
+[Click Record] = (646, 364)
+[Click Record] = (646, 364)
+[Click Record] = (654, 363)
+[Click Record] = (654, 363)
+[Click Record] = (661, 352)
+[Click Record] = (658, 362)
+[Click Record] = (624, 363)
+[Click Record] = (769, 539)
+[Click Record] = (1197, 652)
+[Click Record] = (589, 666)
+Found present1
+[Click Record] = (556, 533)
+[Click Record] = (752, 563)
+[Click Record] = (790, 541)
+[Click Record] = (790, 541)
+[Click Record] = (756, 544)
+[Click Record] = (756, 544)
+[Click Record] = (712, 406)
+[Click Record] = (733, 448)
+[Click Record] = (426, 419)
+[Click Record] = (800, 4)
+[Click Record] = (199, 107)
+[Click Record] = (816, 272)
+[Click Record] = (735, 458)
+[Click Record] = (923, 369)
+[Click Record] = (1182, 759)
+[Sensory Interactions : sound] = 8
+[Ambiguous objects manipulated] = 0
+[Objects manipulated] = 1
+[Total manipulation actions] = 7
+[Number of guesses] = 3
+[Presents collected] = 2
+[Easy presents collected] = 0
+[Hidden presents collected] = 2
+[Objects mapped to correct use] = 1
+2018-03-21 23:54:36.746854 , session complete
+2018-03-21 23:55:06.695055 , session start
+[Click Record] = (1116, 616)
+[Click Record] = (1030, 620)
+[Click Record] = (941, 705)
+[Click Record] = (998, 703)
+[Click Record] = (669, 705)
+[Click Record] = (1216, 393)
+Found present0
+[Click Record] = (769, 534)
+[Click Record] = (705, 512)
+Found present 1
+[Click Record] = (678, 141)
+Found present2
+[Click Record] = (786, 546)
+[Click Record] = (1119, 533)
+[Click Record] = (602, 531)
+Found present 3
+[Click Record] = (592, 507)
+[Click Record] = (783, 537)
+[Click Record] = (1224, 762)
+[Sensory Interactions : sound] = 0
+[Ambiguous objects manipulated] = 0
+[Objects manipulated] = 1
+[Total manipulation actions] = 4
+[Number of guesses] = 1
+[Presents collected] = 4
+[Easy presents collected] = 4
+[Hidden presents collected] = 0
+[Objects mapped to correct use] = 1
+2018-03-21 23:56:43.667721 , session complete
+2018-03-22 00:10:27.916663 , session start
+[Click Record] = (0, 74)
+[Click Record] = (701, 155)
+Found present0
+[Click Record] = (702, 544)
+[Click Record] = (819, 2)
+[Sensory Interactions : sound] = 0
+[Ambiguous objects manipulated] = 0
+[Objects manipulated] = 0
+[Total manipulation actions] = 0
+[Number of guesses] = 0
+[Presents collected] = 1
+[Easy presents collected] = 1
+[Hidden presents collected] = 0
+[Objects mapped to correct use] = 0
+2018-03-22 00:20:43.317457 , session complete
+2018-03-22 00:20:52.970217 , session start
+[Sensory Interactions : sound] = 0
+[Ambiguous objects manipulated] = 0
+[Objects manipulated] = 0
+[Total manipulation actions] = 0
+[Number of guesses] = 0
+[Presents collected] = 0
+[Easy presents collected] = 0
+[Hidden presents collected] = 0
+[Objects mapped to correct use] = 0
+2018-03-22 00:20:58.693530 , session complete
+2018-03-22 00:21:06.395207 , session start
+[Sensory Interactions : sound] = 0
+[Ambiguous objects manipulated] = 0
+[Objects manipulated] = 0
+[Total manipulation actions] = 0
+[Number of guesses] = 0
+[Presents collected] = 0
+[Easy presents collected] = 0
+[Hidden presents collected] = 0
+[Objects mapped to correct use] = 0
+2018-03-22 00:21:13.752081 , session complete
+2018-03-22 00:21:28.331665 , session start
+[Sensory Interactions : sound] = 0
+[Ambiguous objects manipulated] = 0
+[Objects manipulated] = 0
+[Total manipulation actions] = 0
+[Number of guesses] = 0
+[Presents collected] = 0
+[Easy presents collected] = 0
+[Hidden presents collected] = 0
+[Objects mapped to correct use] = 0
+2018-03-22 00:21:33.967116 , session complete
+2018-03-22 00:21:53.871906 , session start
+[Click Record] = (723, 523)
+Found present 0
+[Click Record] = (933, 600)
+[Click Record] = (735, 641)
+[Click Record] = (968, 527)
+Found present1
+[Click Record] = (965, 509)
+[Click Record] = (775, 530)
+[Click Record] = (777, 598)
+[Click Record] = (569, 515)
+Found present 2
+[Click Record] = (755, 546)
+[Click Record] = (750, 540)
+[Click Record] = (517, 10)
+[Click Record] = (827, 8)
+[Click Record] = (1133, 607)
+[Click Record] = (571, 687)
+Found present3
+[Click Record] = (774, 550)
+[Click Record] = (785, 537)
+[Click Record] = (880, 131)
+[Click Record] = (870, 147)
+[Click Record] = (863, 137)
+Found present 4
+[Click Record] = (752, 543)
+[Click Record] = (682, 150)
+Found present5
+[Click Record] = (734, 548)
+[Click Record] = (972, 472)
+[Click Record] = (1148, 188)
+Found present6
+[Click Record] = (744, 532)
+[Click Record] = (630, 665)
+[Click Record] = (1208, 762)
+[Sensory Interactions : sound] = 0
+[Ambiguous objects manipulated] = 0
+[Objects manipulated] = 13
+[Total manipulation actions] = 4
+[Number of guesses] = 1
+[Presents collected] = 7
+[Easy presents collected] = 5
+[Hidden presents collected] = 2
+[Objects mapped to correct use] = 13
+2018-03-22 00:26:07.711009 , session complete
+2018-03-22 16:12:11.142854 , session start
+[Click Record] = (576, 501)
+Found present0
+[Click Record] = (724, 537)
+[Click Record] = (692, 504)
+Found present 1
+[Click Record] = (736, 544)
+[Sensory Interactions : sound] = 0
+[Ambiguous objects manipulated] = 0
+[Objects manipulated] = 0
+[Total manipulation actions] = 0
+[Number of guesses] = 0
+[Presents collected] = 2
+[Easy presents collected] = 2
+[Hidden presents collected] = 0
+[Objects mapped to correct use] = 0
+2018-03-22 16:12:20.840600 , session complete
+2018-03-22 16:20:33.637288 , session start
+[Click Record] = (562, 540)
+Found present 0
+[Click Record] = (564, 519)
+[Click Record] = (633, 350)
+[Click Record] = (638, 350)
+[Click Record] = (760, 546)
+[Click Record] = (671, 132)
+Found present1
+[Click Record] = (726, 535)
+[Click Record] = (1152, 623)
+[Click Record] = (572, 704)
+Found present2
+[Click Record] = (726, 544)
+[Sensory Interactions : sound] = 2
+[Ambiguous objects manipulated] = 0
+[Objects manipulated] = 3
+[Total manipulation actions] = 2
+[Number of guesses] = 2
+[Presents collected] = 3
+[Easy presents collected] = 2
+[Hidden presents collected] = 1
+[Objects mapped to correct use] = 3
+2018-03-22 16:20:55.243200 , session complete
+2018-03-22 16:52:02.593116 , session start
+[Click Record] = (587, 526)
+Found present 0
+[Click Record] = (752, 549)
+[Sensory Interactions : sound] = 0
+[Ambiguous objects manipulated] = 0
+[Objects manipulated] = 0
+[Total manipulation actions] = 0
+[Number of guesses] = 1
+[Presents collected] = 1
+[Easy presents collected] = 1
+[Hidden presents collected] = 0
+[Objects mapped to correct use] = 0
+2018-03-22 16:52:14.665479 , session complete
+2018-03-22 16:52:20.018135 , session start
+[Click Record] = (673, 121)
+Found present0
+[Click Record] = (726, 535)
+[Sensory Interactions : sound] = 0
+[Ambiguous objects manipulated] = 0
+[Objects manipulated] = 0
+[Total manipulation actions] = 0
+[Number of guesses] = 0
+[Presents collected] = 1
+[Easy presents collected] = 1
+[Hidden presents collected] = 0
+[Objects mapped to correct use] = 0
+2018-03-22 16:52:35.296823 , session complete
+2018-03-22 16:52:41.932245 , session start
+[Click Record] = (899, 636)
+[Click Record] = (899, 638)
+[Click Record] = (548, 667)
+[Click Record] = (662, 740)
+[Click Record] = (662, 737)
+[Click Record] = (396, 132)
+[Click Record] = (906, 151)
+[Click Record] = (1002, 168)
+[Click Record] = (1067, 262)
+[Click Record] = (1067, 262)
+[Click Record] = (872, 661)
+Found present0
+[Click Record] = (584, 526)
+[Click Record] = (651, 371)
+[Click Record] = (767, 547)
+[Click Record] = (564, 661)
+[Click Record] = (442, 122)
+[Click Record] = (280, 254)
+[Click Record] = (926, 654)
+[Click Record] = (579, 697)
+[Click Record] = (448, 250)
+[Click Record] = (404, 124)
+[Click Record] = (1164, 628)
+[Click Record] = (575, 668)
+Found present1
+[Click Record] = (734, 545)
+[Click Record] = (430, 131)
+[Click Record] = (430, 132)
+[Click Record] = (670, 707)
+[Click Record] = (660, 732)
+[Click Record] = (657, 722)
+[Click Record] = (279, 250)
+[Click Record] = (896, 146)
+[Click Record] = (887, 115)
+Found present 2
+[Click Record] = (771, 553)
+[Click Record] = (1219, 782)
+[Sensory Interactions : sound] = 1
+[Ambiguous objects manipulated] = 0
+[Objects manipulated] = 20
+[Total manipulation actions] = 10
+[Number of guesses] = 1
+[Presents collected] = 3
+[Easy presents collected] = 0
+[Hidden presents collected] = 3
+[Objects mapped to correct use] = 20
+2018-03-22 16:55:02.952117 , session complete
+2018-03-22 16:55:13.074450 , session start
+[Click Record] = (1075, 259)
+[Click Record] = (915, 630)
+[Click Record] = (877, 650)
+Found present0
+[Click Record] = (784, 538)
+[Click Record] = (1190, 672)
+[Click Record] = (891, 98)
+[Click Record] = (839, 109)
+Found present 1
+[Click Record] = (780, 526)
+[Click Record] = (561, 701)
+Found present2
+[Click Record] = (757, 526)
+[Click Record] = (433, 146)
+[Click Record] = (266, 249)
+[Click Record] = (954, 483)
+Found present3
+[Click Record] = (780, 528)
+[Click Record] = (1134, 181)
+Found present4
+[Click Record] = (726, 537)
+[Click Record] = (1243, 181)
+[Click Record] = (1233, 182)
+[Click Record] = (666, 715)
+[Click Record] = (654, 707)
+[Click Record] = (662, 739)
+[Click Record] = (1214, 386)
+Found present5
+[Click Record] = (796, 523)
+[Click Record] = (1013, 183)
+[Click Record] = (1070, 190)
+[Click Record] = (1066, 45)
+[Click Record] = (1233, 502)
+[Click Record] = (337, 511)
+[Click Record] = (338, 507)
+[Click Record] = (337, 505)
+[Click Record] = (293, 512)
+[Click Record] = (249, 508)
+[Click Record] = (267, 486)
+[Click Record] = (153, 397)
+[Click Record] = (295, 244)
+[Click Record] = (404, 107)
+[Click Record] = (600, 639)
+[Click Record] = (658, 714)
+[Click Record] = (572, 498)
+Found present6
+[Click Record] = (772, 526)
+[Click Record] = (700, 485)
+Found present 7
+[Click Record] = (750, 536)
+[Click Record] = (646, 122)
+Found present8
+[Click Record] = (764, 544)
+[Click Record] = (872, 107)
+[Click Record] = (1250, 187)
+[Click Record] = (1199, 425)
+[Click Record] = (1231, 276)
+[Click Record] = (1223, 290)
+[Click Record] = (1239, 503)
+[Click Record] = (599, 368)
+[Click Record] = (576, 521)
+Found present 9
+[Click Record] = (769, 529)
+[Click Record] = (376, 507)
+[Click Record] = (356, 507)
+[Click Record] = (322, 501)
+[Click Record] = (285, 518)
+[Click Record] = (263, 513)
+[Click Record] = (267, 465)
+[Click Record] = (357, 484)
+[Click Record] = (299, 539)
+[Click Record] = (246, 495)
+[Click Record] = (335, 496)
+[Click Record] = (281, 510)
+[Click Record] = (253, 503)
+[Click Record] = (423, 139)
+[Click Record] = (534, 684)
+[Click Record] = (417, 197)
+[Click Record] = (467, 118)
+[Click Record] = (863, 179)
+[Click Record] = (863, 179)
+[Click Record] = (895, 170)
+[Click Record] = (1127, 384)
+[Click Record] = (1149, 381)
+[Click Record] = (1222, 486)
+[Click Record] = (636, 584)
+[Click Record] = (1258, 311)
+[Click Record] = (906, 652)
+[Click Record] = (1168, 390)
+[Click Record] = (761, 588)
+[Click Record] = (1251, 788)
+[Sensory Interactions : sound] = 0
+[Ambiguous objects manipulated] = 0
+[Objects manipulated] = 108
+[Total manipulation actions] = 19
+[Number of guesses] = 1
+[Presents collected] = 10
+[Easy presents collected] = 7
+[Hidden presents collected] = 3
+[Objects mapped to correct use] = 108
+2018-03-22 16:57:47.020032 , session complete
+2018-03-22 16:57:52.649914 , session start
+[Click Record] = (592, 663)
+[Click Record] = (968, 492)
+Found present0
+[Click Record] = (651, 368)
+[Click Record] = (571, 528)
+[Click Record] = (571, 528)
+[Click Record] = (569, 527)
+[Click Record] = (673, 371)
+[Click Record] = (626, 363)
+[Click Record] = (626, 363)
+[Click Record] = (650, 353)
+[Click Record] = (649, 353)
+[Click Record] = (582, 531)
+[Click Record] = (581, 530)
+[Click Record] = (579, 529)
+[Click Record] = (735, 538)
+[Click Record] = (1234, 397)
+Found present1
+[Click Record] = (648, 354)
+[Click Record] = (773, 530)
+[Click Record] = (1158, 180)
+Found present2
+[Click Record] = (626, 361)
+[Click Record] = (758, 531)
+[Click Record] = (683, 138)
+Found present3
+[Click Record] = (629, 383)
+[Click Record] = (764, 543)
+[Click Record] = (579, 525)
+Found present 4
+[Click Record] = (631, 347)
+[Click Record] = (631, 347)
+[Click Record] = (631, 347)
+[Click Record] = (631, 347)
+[Click Record] = (776, 523)
+[Click Record] = (686, 490)
+Found present 5
+[Click Record] = (641, 381)
+[Click Record] = (641, 381)
+[Click Record] = (638, 376)
+[Click Record] = (782, 538)
+[Click Record] = (574, 485)
+Found present6
+[Click Record] = (670, 367)
+[Click Record] = (781, 529)
+[Click Record] = (1139, 595)
+[Click Record] = (567, 697)
+Found present7
+[Click Record] = (634, 371)
+[Click Record] = (634, 371)
+[Click Record] = (655, 347)
+[Click Record] = (655, 347)
+[Click Record] = (783, 524)
+[Click Record] = (1072, 263)
+[Click Record] = (1002, 692)
+[Click Record] = (881, 640)
+Found present8
+[Click Record] = (685, 367)
+[Click Record] = (685, 367)
+[Click Record] = (760, 531)
+[Click Record] = (850, 78)
+[Click Record] = (875, 108)
+Found present 9
+[Click Record] = (630, 343)
+[Click Record] = (754, 541)
+[Sensory Interactions : sound] = 24
+[Ambiguous objects manipulated] = 0
+[Objects manipulated] = 32
+[Total manipulation actions] = 4
+[Number of guesses] = 7
+[Presents collected] = 10
+[Easy presents collected] = 7
+[Hidden presents collected] = 3
+[Objects mapped to correct use] = 32
+2018-03-22 17:02:24.369779 , session complete
+2018-03-22 17:03:57.893889 , session start
+[Click Record] = (884, 110)
+[Click Record] = (869, 110)
+Found present 0
+[Click Record] = (625, 348)
+[Click Record] = (783, 484)
+[Click Record] = (751, 533)
+[Click Record] = (681, 162)
+Found present1
+[Click Record] = (658, 371)
+[Click Record] = (649, 371)
+[Click Record] = (757, 535)
+[Click Record] = (649, 253)
+[Click Record] = (886, 243)
+[Click Record] = (852, 186)
+[Click Record] = (1036, 273)
+[Click Record] = (970, 344)
+[Click Record] = (986, 310)
+[Click Record] = (1023, 307)
+[Click Record] = (1022, 322)
+[Click Record] = (1141, 464)
+[Click Record] = (1152, 455)
+[Click Record] = (1152, 455)
+[Click Record] = (983, 630)
+[Click Record] = (931, 650)
+[Click Record] = (898, 647)
+[Click Record] = (880, 654)
+Found present2
+[Click Record] = (662, 342)
+[Click Record] = (751, 543)
+[Click Record] = (1118, 648)
+[Click Record] = (552, 686)
+Found present3
+[Click Record] = (631, 325)
+[Click Record] = (616, 362)
+[Click Record] = (766, 532)
+[Click Record] = (1142, 173)
+Found present4
+[Click Record] = (635, 358)
+[Click Record] = (770, 540)
+[Click Record] = (1219, 398)
+Found present5
+[Click Record] = (618, 336)
+[Click Record] = (799, 549)
+[Click Record] = (792, 516)
+[Click Record] = (954, 484)
+Found present6
+[Click Record] = (666, 339)
+[Click Record] = (783, 530)
+[Click Record] = (682, 483)
+Found present 7
+[Click Record] = (706, 313)
+[Click Record] = (588, 389)
+[Click Record] = (644, 382)
+[Click Record] = (647, 360)
+[Click Record] = (644, 389)
+[Click Record] = (751, 524)
+[Click Record] = (583, 467)
+Found present8
+[Click Record] = (567, 498)
+[Click Record] = (666, 334)
+[Click Record] = (631, 342)
+[Click Record] = (780, 554)
+[Click Record] = (593, 494)
+Found present 9
+[Click Record] = (570, 476)
+[Click Record] = (638, 330)
+[Click Record] = (616, 364)
+[Click Record] = (771, 522)
+[Click Record] = (950, 621)
+[Click Record] = (850, 243)
+[Click Record] = (825, 410)
+[Click Record] = (935, 170)
+[Click Record] = (884, 130)
+[Click Record] = (676, 311)
+[Click Record] = (426, 173)
+[Click Record] = (405, 164)
+[Click Record] = (418, 128)
+[Click Record] = (428, 125)
+[Click Record] = (428, 125)
+[Click Record] = (426, 130)
+[Click Record] = (426, 130)
+[Click Record] = (1242, 754)
+[Sensory Interactions : sound] = 16
+[Ambiguous objects manipulated] = 0
+[Objects manipulated] = 83
+[Total manipulation actions] = 14
+[Number of guesses] = 0
+[Presents collected] = 10
+[Easy presents collected] = 7
+[Hidden presents collected] = 3
+[Objects mapped to correct use] = 83
+2018-03-22 17:08:49.061405 , session complete
+2018-03-22 18:12:51.830687 , session start
+[Click Record] = (869, 149)
+[Click Record] = (1154, 184)
+Found present0
+[Click Record] = (1146, 181)
+[Click Record] = (640, 378)
+[Click Record] = (640, 350)
+[Click Record] = (628, 353)
+[Click Record] = (643, 353)
+[Click Record] = (645, 367)
+[Click Record] = (639, 362)
+[Click Record] = (635, 361)
+[Click Record] = (637, 336)
+[Click Record] = (637, 336)
+[Click Record] = (632, 348)
+[Click Record] = (620, 356)
+[Click Record] = (724, 528)
+[Click Record] = (561, 516)
+Found present 1
+[Click Record] = (586, 467)
+[Click Record] = (689, 486)
+[Click Record] = (646, 371)
+[Click Record] = (636, 372)
+[Click Record] = (741, 526)
+[Click Record] = (884, 618)
+[Click Record] = (1158, 613)
+[Click Record] = (566, 675)
+Found present2
+[Click Record] = (568, 675)
+[Click Record] = (973, 486)
+[Click Record] = (611, 344)
+[Click Record] = (760, 527)
+[Click Record] = (1071, 259)
+[Click Record] = (958, 605)
+[Click Record] = (910, 672)
+[Click Record] = (949, 568)
+[Click Record] = (890, 648)
+Found present3
+[Click Record] = (667, 340)
+[Click Record] = (766, 533)
+[Click Record] = (939, 494)
+Found present4
+[Sensory Interactions : sound] = 15
+[Ambiguous objects manipulated] = 0
+[Objects manipulated] = 19
+[Total manipulation actions] = 6
+[Number of guesses] = 1
+[Presents collected] = 5
+[Easy presents collected] = 3
+[Hidden presents collected] = 2
+[Objects mapped to correct use] = 19
+2018-03-22 18:21:23.836854 , session complete
+2018-03-23 15:35:55.482076 , session start
+[Click Record] = (874, 298)
+[Click Record] = (625, 1)
+[Click Record] = (573, 527)
+Found present 0
+[Click Record] = (634, 348)
+[Click Record] = (634, 348)
+[Click Record] = (749, 521)
+[Click Record] = (1146, 616)
+[Click Record] = (570, 681)
+Found present1
+[Click Record] = (753, 525)
+[Click Record] = (847, 131)
+[Click Record] = (749, 459)
+[Click Record] = (664, 723)
+[Click Record] = (632, 600)
+[Click Record] = (962, 578)
+[Click Record] = (1063, 257)
+[Click Record] = (1205, 751)
+[Sensory Interactions : sound] = 2
+[Ambiguous objects manipulated] = 0
+[Objects manipulated] = 7
+[Total manipulation actions] = 6
+[Number of guesses] = 1
+[Presents collected] = 2
+[Easy presents collected] = 1
+[Hidden presents collected] = 1
+[Objects mapped to correct use] = 7
+2018-03-23 16:03:14.506989 , session complete
+2018-03-26 06:39:24.382878 , session start
+[Click Record] = (878, 148)
+[Click Record] = (675, 147)
+Found present0
+[Click Record] = (752, 545)
+[Sensory Interactions : sound] = 0
+[Ambiguous objects manipulated] = 0
+[Objects manipulated] = 0
+[Total manipulation actions] = 1
+[Number of guesses] = 0
+[Presents collected] = 1
+[Easy presents collected] = 1
+[Hidden presents collected] = 0
+[Objects mapped to correct use] = 0
+2018-03-26 06:39:39.313497 , session complete
+2018-03-26 07:07:59.614737 , session start
+P01
+[Click Record] = (675, 123)
+Found present0
+[Click Record] = (580, 539)
+[Sensory Interactions : sound] = 0
+[Ambiguous objects manipulated] = 0
+[Objects manipulated] = 0
+[Total manipulation actions] = 0
+[Number of guesses] = 1
+[Presents collected] = 1
+[Easy presents collected] = 1
+[Hidden presents collected] = 0
+[Objects mapped to correct use] = 0
+2018-03-26 07:08:09.676224 , session complete
+2018-03-26 07:19:53.852062 , session start
+P00
+[Click Record] = (696, 483)
+Found present 0
+[Click Record] = (587, 536)
+[Click Record] = (587, 536)
+[Click Record] = (587, 536)
+[Click Record] = (587, 536)
+[Click Record] = (1074, 163)
+[Click Record] = (729, 530)
+[Click Record] = (727, 530)
+[Click Record] = (585, 467)
+[Click Record] = (563, 522)
+[Click Record] = (563, 522)
+[Click Record] = (563, 522)
+[Click Record] = (1199, 688)
+[Click Record] = (806, 601)
+[Click Record] = (904, 470)
+[Click Record] = (937, 486)
+[Click Record] = (937, 486)
+[Click Record] = (937, 486)
+[Click Record] = (1187, 761)
+[Sensory Interactions : sound] = 0
+[Ambiguous objects manipulated] = 0
+[Objects manipulated] = 0
+[Total manipulation actions] = 0
+[Number of guesses] = 4
+[Presents collected] = 1
+[Easy presents collected] = 1
+[Hidden presents collected] = 0
+[Objects mapped to correct use] = 0
+2018-03-26 07:21:26.197360 , session complete
+2018-03-26 07:23:08.596180 , session start
+P00
+[Click Record] = (670, 103)
+Found present0
+[Click Record] = (560, 531)
+[Click Record] = (721, 534)
+[Click Record] = (696, 501)
+[Click Record] = (693, 463)
+[Click Record] = (693, 463)
+[Click Record] = (693, 463)
+[Click Record] = (693, 463)
+[Click Record] = (693, 463)
+[Click Record] = (693, 463)
+[Click Record] = (687, 498)
+[Click Record] = (687, 498)
+[Click Record] = (687, 498)
+[Click Record] = (650, 416)
+[Click Record] = (650, 416)
+[Click Record] = (551, 533)
+[Click Record] = (583, 523)
+[Click Record] = (568, 483)
+[Click Record] = (568, 483)
+[Click Record] = (557, 634)
+[Click Record] = (1147, 427)
+[Click Record] = (1202, 403)
+[Click Record] = (1202, 403)
+[Click Record] = (1138, 185)
+[Click Record] = (1138, 185)
+[Click Record] = (1138, 185)
+[Click Record] = (873, 140)
+[Click Record] = (262, 220)
+[Click Record] = (286, 251)
+[Click Record] = (286, 251)
+[Click Record] = (413, 134)
+[Click Record] = (413, 134)
+[Click Record] = (1190, 759)
+[Sensory Interactions : sound] = 0
+[Ambiguous objects manipulated] = 0
+[Objects manipulated] = 0
+[Total manipulation actions] = 0
+[Number of guesses] = 1
+[Presents collected] = 1
+[Easy presents collected] = 1
+[Hidden presents collected] = 0
+[Objects mapped to correct use] = 0
+2018-03-26 07:24:24.391348 , session complete
+2018-03-26 07:24:41.758168 , session start
+P00
+[Click Record] = (677, 132)
+Found present0
+[Click Record] = (656, 370)
+[Click Record] = (656, 370)
+[Click Record] = (576, 536)
+[Click Record] = (714, 536)
+[Click Record] = (700, 506)
+Found present 1
+[Click Record] = (742, 529)
+[Click Record] = (1120, 613)
+[Click Record] = (569, 698)
+Found present2
+[Click Record] = (548, 528)
+[Click Record] = (761, 533)
+[Click Record] = (742, 473)
+[Sensory Interactions : sound] = 2
+[Ambiguous objects manipulated] = 0
+[Objects manipulated] = 0
+[Total manipulation actions] = 2
+[Number of guesses] = 2
+[Presents collected] = 3
+[Easy presents collected] = 2
+[Hidden presents collected] = 1
+[Objects mapped to correct use] = 0
+2018-03-26 07:24:59.899428 , session complete
