@@ -19,6 +19,7 @@ from os import path
 # print(moviepy.__file__)
 
 #user_input = input("Participant ID: ")
+#TODO : UI for PID
 user_input = "p"
 # try:
 #         import android
@@ -27,8 +28,8 @@ user_input = "p"
 
 # --- constants --- (UPPER_CASE names)
 
-SCREEN_WIDTH = 1280
-SCREEN_HEIGHT = 800
+SCREEN_WIDTH = 2048
+SCREEN_HEIGHT = 1550
 
 #BLACK = (  0,   0,   0)
 WHITE = (255, 255, 255)
@@ -55,7 +56,7 @@ pygame.mixer.init()
 #         android.init()
 #         android.map_key(android.KEYCODE_BACK, pygame.K_ESCAPE)
 
-screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT), 0, 32)
+screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT), 0, 0)
 
 #screen_rect = screen.get_rect()
 
