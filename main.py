@@ -22,7 +22,7 @@ from datetime import datetime
 # --- constants --- (UPPER_CASE names)
 
 SCREEN_WIDTH = 2048
-SCREEN_HEIGHT = 1550
+SCREEN_HEIGHT = 1536
 
 INVISIBLE_X = SCREEN_WIDTH + 100
 INVISIBLE_Y = SCREEN_HEIGHT + 100
@@ -76,8 +76,8 @@ hidden = 0
 
 img0 = pygame.image.load('assets/present0.png')
 presentImage0 = img0.get_rect()
-presentImage0.x = 538
-presentImage0.y = 641
+presentImage0.x = 855
+presentImage0.y = 1075
 
 collectedPresentImage0 = img0.get_rect()
 collectedPresentImage0.x = INVISIBLE_X
@@ -85,8 +85,8 @@ collectedPresentImage0.y = INVISIBLE_Y
 
 img1 = pygame.image.load('assets/present1.png')
 presentImage1 = img1.get_rect()
-presentImage1.x = 818
-presentImage1.y = 612
+presentImage1.x = 1302
+presentImage1.y = 1030
 
 collectedPresentImage1 = img1.get_rect()
 collectedPresentImage1.x = INVISIBLE_X
@@ -94,8 +94,8 @@ collectedPresentImage1.y = INVISIBLE_Y
 
 img2 = pygame.image.load('assets/present2.png')
 presentImage2 = img2.get_rect()
-presentImage2.x = 916
-presentImage2.y = 446
+presentImage2.x = 1460
+presentImage2.y = 763
 
 collectedPresentImage2 = img2.get_rect()
 collectedPresentImage2.x = INVISIBLE_X
@@ -103,8 +103,8 @@ collectedPresentImage2.y = INVISIBLE_Y
 
 img3 = pygame.image.load('assets/present3.png')
 presentImage3 = img3.get_rect()
-presentImage3.x = 1181
-presentImage3.y = 339
+presentImage3.x = 1883
+presentImage3.y = 593
 
 collectedPresentImage3 = img3.get_rect()
 collectedPresentImage3.x = INVISIBLE_X
@@ -112,8 +112,8 @@ collectedPresentImage3.y = INVISIBLE_Y
 
 img4 = pygame.image.load('assets/present4.png')
 presentImage4 = img4.get_rect()
-presentImage4.x = 1118
-presentImage4.y = 135
+presentImage4.x = 1782
+presentImage4.y = 267
 
 collectedPresentImage4 = img4.get_rect()
 collectedPresentImage4.x = INVISIBLE_X
@@ -121,8 +121,8 @@ collectedPresentImage4.y = INVISIBLE_Y
 
 img5 = pygame.image.load('assets/present5.png')
 presentImage5 = img5.get_rect()
-presentImage5.x = 628
-presentImage5.y = 76
+presentImage5.x = 999
+presentImage5.y = 172
 
 collectedPresentImage5 = img5.get_rect()
 collectedPresentImage5.x = INVISIBLE_X
@@ -130,8 +130,8 @@ collectedPresentImage5.y = INVISIBLE_Y
 
 img6 = pygame.image.load('assets/present6.png')
 presentImage6 = img6.get_rect()
-presentImage6.x = 546
-presentImage6.y = 428
+presentImage6.x = 868
+presentImage6.y = 736
 
 collectedPresentImage6 = img6.get_rect()
 collectedPresentImage6.x = INVISIBLE_X
@@ -139,8 +139,8 @@ collectedPresentImage6.y = INVISIBLE_Y
 
 img7 = pygame.image.load('assets/present7.png')
 presentImage7 = img7.get_rect()
-presentImage7.x = 535
-presentImage7.y = 477
+presentImage7.x = 850
+presentImage7.y = 815
 
 collectedPresentImage7 = img7.get_rect()
 collectedPresentImage7.x = INVISIBLE_X
@@ -148,8 +148,8 @@ collectedPresentImage7.y = INVISIBLE_Y
 
 img8 = pygame.image.load('assets/present8.png')
 presentImage8 = img8.get_rect()
-presentImage8.x = 656
-presentImage8.y = 435
+presentImage8.x = 1043
+presentImage8.y = 762
 
 collectedPresentImage8 = img8.get_rect()
 collectedPresentImage8.x = INVISIBLE_X
@@ -157,12 +157,13 @@ collectedPresentImage8.y = INVISIBLE_Y
 
 img9 = pygame.image.load('assets/present9.png')
 presentImage9 = img9.get_rect()
-presentImage9.x = 832
-presentImage9.y = 86
+presentImage9.x = 1334
+presentImage9.y = 191
 
 collectedPresentImage9 = img9.get_rect()
 collectedPresentImage9.x = INVISIBLE_X
 collectedPresentImage9.y = INVISIBLE_Y
+
 
 # img10 = pygame.image.load('present10.png')
 # presentImage10 = img10.get_rect()
@@ -176,47 +177,56 @@ collectedPresentImage9.y = INVISIBLE_Y
 
 tree = pygame.image.load('assets/tree.png')
 treefab = tree.get_rect()
-treefab.x = 509
-treefab.y = 51
+treefab.x = 809
+treefab.y = 132
 
 shelf = pygame.image.load('assets/shelf.png')
 shelffab = shelf.get_rect()
-shelffab.x = 987
-shelffab.y = 154
+shelffab.x = 1572
+shelffab.y = 297
 
 drum = pygame.image.load('assets/drum.png')
 drumfab = drum.get_rect()
-drumfab.x = 489
-drumfab.y = 582
+drumfab.x = 777
+drumfab.y = 981
 
 chest = pygame.image.load('assets/chest.png')
 chestfab = chest.get_rect()
-chestfab.x = 761
-chestfab.y = 545
+chestfab.x = 1211
+chestfab.y = 922
 
 wclock = pygame.image.load('assets/wclock.png')
 wclockfab = wclock.get_rect()
-wclockfab.x = 786
-wclockfab.y = 43
+wclockfab.x = 1256
+wclockfab.y = 108
 
 hammer = pygame.image.load('assets/hammer.png')
 hammerfab = hammer.get_rect()
-hammerfab.x = 1103
-hammerfab.y = 583
+hammerfab.x = 1748
+hammerfab.y = 996
 
 key = pygame.image.load('assets/key.png')
 keyfab = key.get_rect()
-keyfab.x = 1030
-keyfab.y = 231
+keyfab.x = 1642
+keyfab.y = 420
+
+anchor = pygame.image.load('assets/anchor.png')
+anchorfab = anchor.get_rect()
+anchorfab.x = 1004
+anchorfab.y = 1109
+
+stroll = pygame.image.load('assets/stroll.png')
+strollfab = key.get_rect()
+strollfab.x = 564
+strollfab.y = 155
 
 done = pygame.image.load('assets/done.png')
 donefab = done.get_rect()
-donefab.x = 1138
-donefab.y = 726
+donefab.x = 1787
+donefab.y = 1303
 
 #overlay
 overlay = pygame.image.load('assets/overlay.png')
-overlay = pygame.transform.scale(overlay, (SCREEN_WIDTH, SCREEN_HEIGHT))
 overlayfab = overlay.get_rect()
 overlayfab.x = INVISIBLE_X
 overlayfab.y = INVISIBLE_Y
@@ -293,19 +303,21 @@ train = pygame.mixer.Sound("assets/train.wav")
 
 
 def display_overlay(collected_present):
+    global overlayOn
     overlayOn = True
 
     overlayfab.x = 0
     overlayfab.y = 0
 
-    collected_present.x = 601
-    collected_present.y = 312
-    overlayguess.x = 505
-    overlayguess.y = 512
-    overlayskip.x = 689
-    overlayskip.y = 512
+    collected_present.x = 957
+    collected_present.y = 587
+    overlayguess.x = 841
+    overlayguess.y = 867
+    overlayskip.x = 1097
+    overlayskip.y = 867
 
 def hide_overlay():
+    global overlayOn
     overlayOn = False
 
     overlayfab.x = INVISIBLE_X
@@ -323,7 +335,9 @@ def hide_overlay():
     overlayguessdone.x = INVISIBLE_X
     overlayguessdone.y = INVISIBLE_Y
 
-
+def LOG(f, msg):
+    f.write(str(datetime.now()) + ", " + msg + "\n")
+    f.flush()
 
 try:
     with open("/sdcard/pid_initial.txt", 'r') as pid_txt:
@@ -427,9 +441,7 @@ except:
 filename = "pre_"+pid_text+"_"+pinitial_text+"_"+datetime.now().strftime('%Y-%m-%d-%H-%M-%S-%f')+".txt"
 
 with open(os.path.join(LOG_DIR,filename),"w") as f:
-    f.write('\n' + str(datetime.now()) + ' , session start')
-    f.write('\n' + pid_text + ";" + pinitial_text)
-    f.flush()
+    LOG(f, 'session start: ' + pid_text + ";" + pinitial_text)
 
     print "logfile created", f
 
@@ -450,7 +462,7 @@ with open(os.path.join(LOG_DIR,filename),"w") as f:
                 if event.button == 1:
 
 
-                    f.write('\n' + str(datetime.now()) + ',[Click Record] = ' + str(event.pos))
+                    LOG(f, '[Click Record] = ' + str(event.pos))
 
 
                     # drag the hammer
@@ -460,7 +472,8 @@ with open(os.path.join(LOG_DIR,filename),"w") as f:
                         offset_x = hammerfab.x - mouse_x
                         offset_y = hammerfab.y - mouse_y
                         print ('manipulation')
-                        f.write("\n"+str(datetime.now())+", hammer manipulation")
+                        LOG(f, "hammer manipulation")
+
                         number_of_manipulations += 1
 
 
@@ -471,7 +484,8 @@ with open(os.path.join(LOG_DIR,filename),"w") as f:
                         offset_x = keyfab.x - mouse_x
                         offset_y = keyfab.y - mouse_y
                         print ('manipulation')
-                        f.write("\n" + str(datetime.now()) + ", key manipulation")
+                        LOG(f, "key manipulation")
+
                         number_of_manipulations += 1
 
                     #drag the wclock
@@ -481,7 +495,8 @@ with open(os.path.join(LOG_DIR,filename),"w") as f:
                         offset_x = wclockfab.x - mouse_x
                         offset_y = wclockfab.y - mouse_y
                         print ('manipulation')
-                        f.write("\n" + str(datetime.now()) + ", wclock manipulation")
+                        LOG(f, "wclock manipulation")
+
                         number_of_manipulations += 1
 
 
@@ -494,7 +509,8 @@ with open(os.path.join(LOG_DIR,filename),"w") as f:
                         presentImage0.x = INVISIBLE_X
                         presentImage0.y = INVISIBLE_Y
                         print('working')
-                        f.write('\n' + str(datetime.now()) + ', Found present #0, Total ' + str(i))
+                        LOG(f, 'Found present #0, Total ' + str(i))
+
 
                         #play sound
                         blip.play()
@@ -511,7 +527,8 @@ with open(os.path.join(LOG_DIR,filename),"w") as f:
 
                         i += 1
 
-                        f.write('\n' + str(datetime.now()) + ', Found present #1, Total ' + str(i))
+                        LOG(f, 'Found present #1, Total ' + str(i))
+
                         #play sound
                         blip.play()
                         print ('playing')
@@ -532,7 +549,8 @@ with open(os.path.join(LOG_DIR,filename),"w") as f:
                         mouse_x, mouse_y = event.pos
                         #Log present collection
                         i += 1
-                        f.write('\n' + str(datetime.now()) + ', Found present #2, Total ' + str(i))
+                        LOG(f, 'Found present #2, Total ' + str(i))
+
                         presentImage2.x = INVISIBLE_X
                         presentImage2.y = INVISIBLE_Y
                         print('working')
@@ -551,7 +569,8 @@ with open(os.path.join(LOG_DIR,filename),"w") as f:
                         mouse_x, mouse_y = event.pos
                         #Log present collection
                         i += 1
-                        f.write('\n' + str(datetime.now()) + ', Found present #3, Total ' + str(i))
+                        LOG(f, 'Found present #3, Total ' + str(i))
+
                         presentImage3.x = INVISIBLE_X
                         presentImage3.y = INVISIBLE_Y
                         print('working')
@@ -570,7 +589,8 @@ with open(os.path.join(LOG_DIR,filename),"w") as f:
                         mouse_x, mouse_y = event.pos
                         #Log present collection
                         i += 1
-                        f.write('\n' + str(datetime.now()) + ', Found present #4, Total ' + str(i))
+                        LOG(f, 'Found present #4, Total ' + str(i))
+
                         presentImage4.x = INVISIBLE_X
                         presentImage4.y = INVISIBLE_Y
                         print('working')
@@ -588,7 +608,8 @@ with open(os.path.join(LOG_DIR,filename),"w") as f:
                         mouse_x, mouse_y = event.pos
                         #Log present collection
                         i += 1
-                        f.write('\n' + str(datetime.now()) + ', Found present #5, Total ' + str(i))
+                        LOG(f, 'Found present #5, Total ' + str(i))
+
                         presentImage5.x = INVISIBLE_X
                         presentImage5.y = INVISIBLE_Y
                         print('working')
@@ -606,7 +627,8 @@ with open(os.path.join(LOG_DIR,filename),"w") as f:
                         mouse_x, mouse_y = event.pos
                         #Log present collection
                         i += 1
-                        f.write('\n' + str(datetime.now()) + ', Found present #6, Total ' + str(i))
+                        LOG(f, 'Found present #6, Total ' + str(i))
+
                         presentImage6.x = INVISIBLE_X
                         presentImage6.y = INVISIBLE_Y
                         print('working')
@@ -623,7 +645,8 @@ with open(os.path.join(LOG_DIR,filename),"w") as f:
                         mouse_x, mouse_y = event.pos
                         #Log present collection
                         i += 1
-                        f.write('\n' + str(datetime.now()) + ', Found present #7, Total ' + str(i))
+                        LOG(f, 'Found present #7, Total ' + str(i))
+
                         presentImage7.x = INVISIBLE_X
                         presentImage7.y = INVISIBLE_Y
                         print('working')
@@ -640,7 +663,8 @@ with open(os.path.join(LOG_DIR,filename),"w") as f:
                         mouse_x, mouse_y = event.pos
                         #Log present collection
                         i += 1
-                        f.write('\n' + str(datetime.now()) + ', Found present #8, Total ' + str(i))
+                        LOG(f, 'Found present #8, Total ' + str(i))
+
                         presentImage8.x = INVISIBLE_X
                         presentImage8.y = INVISIBLE_Y
 
@@ -655,7 +679,8 @@ with open(os.path.join(LOG_DIR,filename),"w") as f:
                         mouse_x, mouse_y = event.pos
                         #Log present collection
                         i += 1
-                        f.write('\n' + str(datetime.now()) + ', Found present #9, Total ' + str(i))
+                        LOG(f, 'Found present #9, Total ' + str(i))
+
                         presentImage9.x = INVISIBLE_X
                         presentImage9.y = INVISIBLE_Y
                         print('workinghid')
@@ -673,32 +698,35 @@ with open(os.path.join(LOG_DIR,filename),"w") as f:
                     if overlayskip.collidepoint(event.pos):
                         mouse_x, mouse_y = event.pos
                         print('skipping')
-                        f.write("\n" + str(datetime.now()) + ", skip guessing")
+                        LOG(f, "skip guessing")
+
 
                         hide_overlay()
 
                     if overlayguess.collidepoint(event.pos):
                         mouse_x, mouse_y = event.pos
                         print('guessing')
-                        f.write("\n" + str(datetime.now()) + ", attempt guessing")
+                        LOG(f, "attempt guessing")
+
                         #Log skipping time - incomplete
                         # f = open('log.txt','a')
-                        # f.write('\n' + str(datetime.now()) + ', Found present' + str(i))
+                        # LOG(f, 'Found present' + str(i))
                         # f.close()
                         guesses += 1
 
                         overlayskip.x = INVISIBLE_X
                         overlayskip.y = INVISIBLE_Y
-                        overlayguessdone.x = 689
-                        overlayguessdone.y = 512
+                        overlayguessdone.x = 1097
+                        overlayguessdone.y = 867
 
                     if overlayguessdone.collidepoint(event.pos):
                         mouse_x, mouse_y = event.pos
                         print('done guessing')
-                        f.write("\n" + str(datetime.now()) + ", done guessing")
+                        LOG(f, "done guessing")
+
                         #Log skipping time - incomplete
                         # f = open('log.txt','a')
-                        # f.write('\n' + str(datetime.now()) + ', Found present' + str(i))
+                        # LOG(f, 'Found present' + str(i))
                         # f.close()
                         hide_overlay()
 
@@ -707,7 +735,7 @@ with open(os.path.join(LOG_DIR,filename),"w") as f:
                         mouse_x, mouse_y = event.pos
                         #play sound
                         pig.play()
-                        f.write("\n" + str(datetime.now()) + ", present shake #0 ")
+                        LOG(f, "present shake #0 ")
                         sensory_interactions_sound += 1
 
                     #Shake1
@@ -715,7 +743,7 @@ with open(os.path.join(LOG_DIR,filename),"w") as f:
                         mouse_x, mouse_y = event.pos
                         #play sound
                         ball.play()
-                        f.write("\n" + str(datetime.now()) + ", present shake #1 ")
+                        LOG(f, "present shake #1 ")
                         sensory_interactions_sound += 1
 
                     #Shake2
@@ -723,7 +751,7 @@ with open(os.path.join(LOG_DIR,filename),"w") as f:
                         mouse_x, mouse_y = event.pos
                         #play sound
                         bike.play()
-                        f.write("\n" + str(datetime.now()) + ", present shake #2 ")
+                        LOG(f, "present shake #2 ")
                         sensory_interactions_sound += 1
 
                     #Shake3
@@ -731,7 +759,7 @@ with open(os.path.join(LOG_DIR,filename),"w") as f:
                         mouse_x, mouse_y = event.pos
                         #play sound
                         horn.play()
-                        f.write("\n" + str(datetime.now()) + ", present shake #3 ")
+                        LOG(f, "present shake #3 ")
                         sensory_interactions_sound += 1
 
                     #Shake4
@@ -739,7 +767,7 @@ with open(os.path.join(LOG_DIR,filename),"w") as f:
                         mouse_x, mouse_y = event.pos
                         #play sound
                         cloth.play()
-                        f.write("\n" + str(datetime.now()) + ", present shake #4 ")
+                        LOG(f, "present shake #4 ")
                         sensory_interactions_sound += 1
 
                     #Shake5
@@ -747,7 +775,7 @@ with open(os.path.join(LOG_DIR,filename),"w") as f:
                         mouse_x, mouse_y = event.pos
                         #play sound
                         sad.play()
-                        f.write("\n" + str(datetime.now()) + ", present shake #5 ")
+                        LOG(f, "present shake #5 ")
                         sensory_interactions_sound += 1
 
                     #Shake6
@@ -755,7 +783,7 @@ with open(os.path.join(LOG_DIR,filename),"w") as f:
                         mouse_x, mouse_y = event.pos
                         #play sound
                         coins.play()
-                        f.write("\n" + str(datetime.now()) + ", present shake #6 ")
+                        LOG(f, "present shake #6 ")
                         sensory_interactions_sound += 1
 
                     #Shake7
@@ -763,7 +791,7 @@ with open(os.path.join(LOG_DIR,filename),"w") as f:
                         mouse_x, mouse_y = event.pos
                         #play sound
                         dog.play()
-                        f.write("\n" + str(datetime.now()) + ", present shake #7 ")
+                        LOG(f, "present shake #7 ")
                         sensory_interactions_sound += 1
 
                     #Shake8
@@ -772,7 +800,7 @@ with open(os.path.join(LOG_DIR,filename),"w") as f:
                         #play sound
                         #print ('collectedPresentImage8')
                         rattle.play()
-                        f.write("\n" + str(datetime.now()) + ", present shake #8 ")
+                        LOG(f, "present shake #8 ")
                         sensory_interactions_sound += 1
 
 
@@ -781,7 +809,7 @@ with open(os.path.join(LOG_DIR,filename),"w") as f:
                         mouse_x, mouse_y = event.pos
                         #play sound
                         train.play()
-                        f.write("\n" + str(datetime.now()) + ", present shake #9 ")
+                        LOG(f, "present shake #9 ")
                         sensory_interactions_sound += 1
 
 
@@ -793,6 +821,18 @@ with open(os.path.join(LOG_DIR,filename),"w") as f:
                         running = False
                         print('done')
 
+                    # Ambiguous objects
+                    if anchorfab.collidepoint(event.pos) and overlayOn == False:
+                        mouse_x, mouse_y = event.pos
+                        # Log present collection
+                        ambiguous_objects_manipulated += 1
+                        LOG(f, 'Ambiguous object manipulated: anchor, ' + str(ambiguous_objects_manipulated))
+
+                    if strollfab.collidepoint(event.pos) and overlayOn == False:
+                        mouse_x, mouse_y = event.pos
+                        # Log present collection
+                        ambiguous_objects_manipulated += 1
+                        LOG(f, 'Ambiguous object manipulated: scroll, ' + str(ambiguous_objects_manipulated))
 
 
             elif event.type == pygame.MOUSEBUTTONUP:
@@ -802,7 +842,7 @@ with open(os.path.join(LOG_DIR,filename),"w") as f:
                     wclockfab_dragging = False
 
                 if chest_visible:
-                    if keyfab.x < 915 and keyfab.x > 875 and keyfab.y < 642 and keyfab.y > 602:
+                    if keyfab.x < 1476 and keyfab.x > 1376 and keyfab.y < 1101 and keyfab.y > 1001:
                         chestfab.x = INVISIBLE_X
                         chestfab.y = INVISIBLE_Y
                         chest_visible = False
@@ -812,10 +852,11 @@ with open(os.path.join(LOG_DIR,filename),"w") as f:
                         # print ('playing')
                         magic = empty
                         # successful_manipulations += 1
-                        f.write("\n" + str(datetime.now()) + ", key action success")
+                        LOG(f, "key action success")
+
 
                 if drum_visible:
-                    if hammerfab.x < 625 and hammerfab.x > 496 and hammerfab.y < 717 and hammerfab.y > 542:
+                    if hammerfab.x < 1018 and hammerfab.x > 777 and hammerfab.y < 1261 and hammerfab.y > 981:
                         drumfab.x = INVISIBLE_X
                         drumfab.y = INVISIBLE_Y
                         drum_visible = False
@@ -825,17 +866,19 @@ with open(os.path.join(LOG_DIR,filename),"w") as f:
                         # print ('playing')
                         chop = empty
                         # successful_manipulations += 1
-                        f.write("\n" + str(datetime.now()) + ", hammer action success")
+                        LOG(f, " hammer action success")
+
 
                 if clock_unmoved:
-                    if (wclockfab.x < 725 or wclockfab.x > 846 or wclockfab.y > 105) and overlayOn == False:
+                    if (wclockfab.x < 1073 or wclockfab.x > 1452 or wclockfab.y > 316) and overlayOn == False:
                         # drumfab.x = INVISIBLE_X
                         # drumfab.y = INVISIBLE_Y
                         clock_unmoved = False
                         # objects_manipulated +=1
                         print ('clock moved')
                         # successful_manipulations += 1
-                        f.write("\n" + str(datetime.now()) + ", wclock action success")
+                        LOG(f, "wclock action success")
+
 
             elif event.type == pygame.MOUSEMOTION:
                 if hammerfab_dragging:
@@ -885,7 +928,7 @@ with open(os.path.join(LOG_DIR,filename),"w") as f:
 
         # - draws (without updates) -
 
-        f.flush()
+
 
         screen.fill(WHITE)
         screen.blit(bg, (0, 0))
@@ -893,6 +936,7 @@ with open(os.path.join(LOG_DIR,filename),"w") as f:
         screen.blit(img0, presentImage0)
         screen.blit(img1, presentImage1)
         screen.blit(img2, presentImage2)
+        screen.blit(shelf, shelffab)
         screen.blit(img3, presentImage3)
         screen.blit(img4, presentImage4)
         screen.blit(img6, presentImage6)
@@ -903,12 +947,13 @@ with open(os.path.join(LOG_DIR,filename),"w") as f:
         screen.blit(img9, presentImage9)
         # screen.blit(img10, presentImage10)
         # screen.blit(img11, presentImage11)
-        screen.blit(shelf, shelffab)
         screen.blit(drum, drumfab)
         screen.blit(chest, chestfab)
         screen.blit(wclock, wclockfab)
         screen.blit(hammer, hammerfab)
         screen.blit(key, keyfab)
+        screen.blit(anchor, anchorfab)
+        screen.blit(stroll, strollfab)
         screen.blit(done, donefab)
         screen.blit(overlay, overlayfab)
         screen.blit(oguess, overlayguess)
