@@ -325,7 +325,7 @@ with open(os.path.join(LOG_DIR,"log.txt"),"w+") as f:
                     if event.button == 1:
 
 
-                            f.write('\n' + '[Click Record] = ' + str(event.pos))
+                            f.write('\n' + str(datetime.now()) + ',[Click Record] = ' + str(event.pos))
                             f.flush()  
 
                             # drag the hammer
@@ -335,6 +335,7 @@ with open(os.path.join(LOG_DIR,"log.txt"),"w+") as f:
                                     offset_x = hammerfab.x - mouse_x
                                     offset_y = hammerfab.y - mouse_y
                                     print ('manipulation')
+                                    f.write("\n"+str(datetime.now())+", hammer manipulation")
                                     number_of_manipulations += 1
 
 
@@ -345,6 +346,7 @@ with open(os.path.join(LOG_DIR,"log.txt"),"w+") as f:
                                     offset_x = keyfab.x - mouse_x
                                     offset_y = keyfab.y - mouse_y
                                     print ('manipulation')
+                                    f.write("\n" + str(datetime.now()) + ", key manipulation")
                                     number_of_manipulations += 1
 
                             #drag the wclock
@@ -354,6 +356,7 @@ with open(os.path.join(LOG_DIR,"log.txt"),"w+") as f:
                                     offset_x = wclockfab.x - mouse_x
                                     offset_y = wclockfab.y - mouse_y
                                     print ('manipulation')
+                                    f.write("\n" + str(datetime.now()) + ", wclock manipulation")
                                     number_of_manipulations += 1        
 
 
@@ -362,7 +365,7 @@ with open(os.path.join(LOG_DIR,"log.txt"),"w+") as f:
                                     mouse_x, mouse_y = event.pos
                                     #Log present collection
                                     
-                                    f.write('\n' + 'Found present' + str(i))
+                                    f.write('\n' + str(datetime.now()) + ', Found present #0, Total ' + str(i))
                                     f.flush()
                                     i += 1
                                     presentImage0.x = 2000
@@ -394,7 +397,7 @@ with open(os.path.join(LOG_DIR,"log.txt"),"w+") as f:
                                     mouse_x, mouse_y = event.pos
                                     #Log present collection
                                     
-                                    f.write('\n' + 'Found present' + str(i))
+                                    f.write('\n' + str(datetime.now()) + ', Found present #1, Total ' + str(i))
                                     f.flush()
                                     i += 1
 
@@ -427,7 +430,7 @@ with open(os.path.join(LOG_DIR,"log.txt"),"w+") as f:
                             if presentImage2.collidepoint(event.pos) and overlayOn == False:
                                     mouse_x, mouse_y = event.pos
                                     #Log present collection
-                                    f.write('\n' + 'Found present' + str(i))
+                                    f.write('\n' + str(datetime.now()) + ', Found present #2, Total ' + str(i))
                                     f.flush()
                                     i += 1
                                     presentImage2.x = 2000
@@ -456,7 +459,7 @@ with open(os.path.join(LOG_DIR,"log.txt"),"w+") as f:
                             if presentImage3.collidepoint(event.pos) and overlayOn == False:
                                     mouse_x, mouse_y = event.pos
                                     #Log present collection
-                                    f.write('\n' + 'Found present' + str(i))
+                                    f.write('\n' + str(datetime.now()) + ', Found present #3, Total ' + str(i))
                                     f.flush()      
                                     i += 1
                                     presentImage3.x = 2000
@@ -486,7 +489,7 @@ with open(os.path.join(LOG_DIR,"log.txt"),"w+") as f:
                             if presentImage4.collidepoint(event.pos) and overlayOn == False:
                                     mouse_x, mouse_y = event.pos
                                     #Log present collection
-                                    f.write('\n' + 'Found present' + str(i))
+                                    f.write('\n' + str(datetime.now()) + ', Found present #4, Total ' + str(i))
                                     f.flush()
                                     i += 1
                                     presentImage4.x = 2000
@@ -515,7 +518,7 @@ with open(os.path.join(LOG_DIR,"log.txt"),"w+") as f:
                             if presentImage5.collidepoint(event.pos) and overlayOn == False:
                                     mouse_x, mouse_y = event.pos
                                     #Log present collection
-                                    f.write('\n' + 'Found present' + str(i))
+                                    f.write('\n' + str(datetime.now()) + ', Found present #5, Total ' + str(i))
                                     f.flush()
                                     i += 1
                                     presentImage5.x = 2000
@@ -545,7 +548,7 @@ with open(os.path.join(LOG_DIR,"log.txt"),"w+") as f:
                             if presentImage6.collidepoint(event.pos) and overlayOn == False:
                                     mouse_x, mouse_y = event.pos
                                     #Log present collection
-                                    f.write('\n' + 'Found present' + str(i))
+                                    f.write('\n' + str(datetime.now()) + ', Found present #6, Total ' + str(i))
                                     f.flush()
                                     i += 1
                                     presentImage6.x = 2000
@@ -573,7 +576,7 @@ with open(os.path.join(LOG_DIR,"log.txt"),"w+") as f:
                             if presentImage7.collidepoint(event.pos) and overlayOn == False:
                                     mouse_x, mouse_y = event.pos
                                     #Log present collection
-                                    f.write('\n' + 'Found present' + str(i))
+                                    f.write('\n' + str(datetime.now()) + ', Found present #7, Total ' + str(i))
                                     f.flush()
                                     i += 1
                                     presentImage7.x = 2000
@@ -601,7 +604,7 @@ with open(os.path.join(LOG_DIR,"log.txt"),"w+") as f:
                             if presentImage8.collidepoint(event.pos) and overlayOn == False:
                                     mouse_x, mouse_y = event.pos
                                     #Log present collection
-                                    f.write('\n' + 'Found present' + str(i))
+                                    f.write('\n' + str(datetime.now()) + ', Found present #8, Total ' + str(i))
                                     f.flush()
                                     i += 1
                                     presentImage8.x = 2000
@@ -627,9 +630,10 @@ with open(os.path.join(LOG_DIR,"log.txt"),"w+") as f:
                             if overlayskip.collidepoint(event.pos):
                                     mouse_x, mouse_y = event.pos
                                     print('skipping')
+                                    f.write("\n" + str(datetime.now()) + ", skip guessing")
                                     #Log skipping time - incomplete
                                     # f = open('log.txt','a')
-                                    # f.write('\n' + 'Found present' + str(i))
+                                    # f.write('\n' + str(datetime.now()) + ', Found present' + str(i))
                                     # f.close()
                                     
                                     overlayfab.x = 2000
@@ -646,9 +650,10 @@ with open(os.path.join(LOG_DIR,"log.txt"),"w+") as f:
                             if overlayguess.collidepoint(event.pos):
                                     mouse_x, mouse_y = event.pos
                                     print('guessing')
+                                    f.write("\n" + str(datetime.now()) + ", attempt guessing")
                                     #Log skipping time - incomplete
                                     # f = open('log.txt','a')
-                                    # f.write('\n' + 'Found present' + str(i))
+                                    # f.write('\n' + str(datetime.now()) + ', Found present' + str(i))
                                     # f.close()
                                     guesses += 1
 
@@ -660,9 +665,10 @@ with open(os.path.join(LOG_DIR,"log.txt"),"w+") as f:
                             if overlayguessdone.collidepoint(event.pos):
                                     mouse_x, mouse_y = event.pos
                                     print('done guessing')
+                                    f.write("\n" + str(datetime.now()) + ", done guessing")
                                     #Log skipping time - incomplete
                                     # f = open('log.txt','a')
-                                    # f.write('\n' + 'Found present' + str(i))
+                                    # f.write('\n' + str(datetime.now()) + ', Found present' + str(i))
                                     # f.close()
                                     
                                     overlayfab.x = 2000
@@ -684,7 +690,7 @@ with open(os.path.join(LOG_DIR,"log.txt"),"w+") as f:
                             if presentImage9.collidepoint(event.pos) and clock_unmoved == False:
                                     mouse_x, mouse_y = event.pos
                                     #Log present collection
-                                    f.write('\n' + 'Found present' + str(i))
+                                    f.write('\n' + str(datetime.now()) + ', Found present #9, Total ' + str(i))
                                     f.flush()
                                     i += 1
                                     presentImage9.x = 2000
@@ -716,6 +722,7 @@ with open(os.path.join(LOG_DIR,"log.txt"),"w+") as f:
                                     mouse_x, mouse_y = event.pos
                                     #play sound
                                     pig.play()
+                                    f.write("\n" + str(datetime.now()) + ", present shake #0 ")
                                     sensory_interactions_sound += 1
 
                             #Shake1
@@ -723,6 +730,7 @@ with open(os.path.join(LOG_DIR,"log.txt"),"w+") as f:
                                     mouse_x, mouse_y = event.pos
                                     #play sound
                                     ball.play()
+                                    f.write("\n" + str(datetime.now()) + ", present shake #1 ")
                                     sensory_interactions_sound += 1
 
                             #Shake2
@@ -730,6 +738,7 @@ with open(os.path.join(LOG_DIR,"log.txt"),"w+") as f:
                                     mouse_x, mouse_y = event.pos
                                     #play sound
                                     bike.play()
+                                    f.write("\n" + str(datetime.now()) + ", present shake #2 ")
                                     sensory_interactions_sound += 1
 
                             #Shake3
@@ -737,6 +746,7 @@ with open(os.path.join(LOG_DIR,"log.txt"),"w+") as f:
                                     mouse_x, mouse_y = event.pos
                                     #play sound
                                     horn.play()
+                                    f.write("\n" + str(datetime.now()) + ", present shake #3 ")
                                     sensory_interactions_sound += 1
 
                             #Shake4
@@ -744,6 +754,7 @@ with open(os.path.join(LOG_DIR,"log.txt"),"w+") as f:
                                     mouse_x, mouse_y = event.pos
                                     #play sound
                                     cloth.play()
+                                    f.write("\n" + str(datetime.now()) + ", present shake #4 ")
                                     sensory_interactions_sound += 1
 
                             #Shake5
@@ -751,6 +762,7 @@ with open(os.path.join(LOG_DIR,"log.txt"),"w+") as f:
                                     mouse_x, mouse_y = event.pos
                                     #play sound
                                     sad.play()
+                                    f.write("\n" + str(datetime.now()) + ", present shake #5 ")
                                     sensory_interactions_sound += 1
 
                             #Shake6
@@ -758,6 +770,7 @@ with open(os.path.join(LOG_DIR,"log.txt"),"w+") as f:
                                     mouse_x, mouse_y = event.pos
                                     #play sound
                                     coins.play()
+                                    f.write("\n" + str(datetime.now()) + ", present shake #6 ")
                                     sensory_interactions_sound += 1
 
                             #Shake7
@@ -765,6 +778,7 @@ with open(os.path.join(LOG_DIR,"log.txt"),"w+") as f:
                                     mouse_x, mouse_y = event.pos
                                     #play sound
                                     dog.play()
+                                    f.write("\n" + str(datetime.now()) + ", present shake #7 ")
                                     sensory_interactions_sound += 1
 
                             #Shake8
@@ -773,6 +787,7 @@ with open(os.path.join(LOG_DIR,"log.txt"),"w+") as f:
                                     #play sound
                                     #print ('collectedPresentImage8')
                                     rattle.play()
+                                    f.write("\n" + str(datetime.now()) + ", present shake #8 ")
                                     sensory_interactions_sound += 1
 
 
@@ -781,6 +796,7 @@ with open(os.path.join(LOG_DIR,"log.txt"),"w+") as f:
                                     mouse_x, mouse_y = event.pos
                                     #play sound
                                     train.play()
+                                    f.write("\n" + str(datetime.now()) + ", present shake #9 ")
                                     sensory_interactions_sound += 1
 
                             
@@ -810,6 +826,7 @@ with open(os.path.join(LOG_DIR,"log.txt"),"w+") as f:
                             # print ('playing')
                             magic = empty
                             # successful_manipulations += 1
+                            f.write("\n" + str(datetime.now()) + ", key action success")
 
                     if hammerfab.x < 625 and hammerfab.x > 496 and hammerfab.y < 717 and hammerfab.y > 542:
                             drumfab.x = 2000
@@ -821,6 +838,7 @@ with open(os.path.join(LOG_DIR,"log.txt"),"w+") as f:
                             # print ('playing')
                             chop = empty
                             # successful_manipulations += 1
+                            f.write("\n" + str(datetime.now()) + ", hammer action success")
 
 
                     if (wclockfab.x < 725 or wclockfab.x > 846 or wclockfab.y > 105) and overlayOn == False:
@@ -830,6 +848,7 @@ with open(os.path.join(LOG_DIR,"log.txt"),"w+") as f:
                             # objects_manipulated +=1
                             print ('clock moved')
                             # successful_manipulations += 1
+                            f.write("\n" + str(datetime.now()) + ", wclock action success")
 
             elif event.type == pygame.MOUSEMOTION:
                     if hammerfab_dragging:
@@ -929,67 +948,61 @@ with open(os.path.join(LOG_DIR,"log.txt"),"w+") as f:
 
         clock.tick(FPS)
 
-# - end -
+        # - end -
 
-# Log parameters 
-# Global : 
-#     mouse click locations 
-#     time stamp of events 
+        # Log parameters
+        # Global :
+        #     mouse click locations
+        #     time stamp of events
 
-# Event based : 
-#     Interacting with novel sensory interactions / sensory experiences such as touch, sight, and sound - deviating from regular : Number of sound interactions 
-#     Novel objects interacted with (animated presents, and objects with sound) : Number of animated presents clicked on 
-#     Ambiguous objects interacted with : Clock, paper stroll clicks
-#     Number of manipulations : Key, axe, tree, present shaking
-#     Number of attempts made to answer the guessing puzzle : Number of clicks on Guess
-#     Number of questions asked : NA 
-#     Number of questions that aided the hypothesis of what’s inside : NA
-#     Number of hidden presents found : Easy presents collected, Hidden presents collected, Total presents collected
-#     Time spent exploring the game : Time stamps 
-#     If the objects were mapped to their correct use : Present behind axe, key collected
+        # Event based :
+        #     Interacting with novel sensory interactions / sensory experiences such as touch, sight, and sound - deviating from regular : Number of sound interactions
+        #     Novel objects interacted with (animated presents, and objects with sound) : Number of animated presents clicked on
+        #     Ambiguous objects interacted with : Clock, paper stroll clicks
+        #     Number of manipulations : Key, axe, tree, present shaking
+        #     Number of attempts made to answer the guessing puzzle : Number of clicks on Guess
+        #     Number of questions asked : NA
+        #     Number of questions that aided the hypothesis of what’s inside : NA
+        #     Number of hidden presents found : Easy presents collected, Hidden presents collected, Total presents collected
+        #     Time spent exploring the game : Time stamps
+        #     If the objects were mapped to their correct use : Present behind axe, key collected
 
+        #     Interacting with novel sensory interactions / sensory experiences such as touch, sight, and sound - deviating from regular : Number of sound interactions
+        f.write('\n' + '[Sensory Interactions : sound] = ' + str(sensory_interactions_sound))
 
-from datetime import datetime
+        #     Novel objects interacted with (animated presents, and objects with sound) : Number of animated presents clicked on
+        #f.write('\n' + '[Novel objects manipulated] = ' + str(animated_objects_manipulated))
 
+        #     Ambiguous objects interacted with : Clock, paper stroll clicks
+        #TODO
+        f.write('\n' + '[Ambiguous objects manipulated] = ' + str(ambiguous_objects_manipulated))
 
-# f = open('log.txt','a')
+        #     Number of manipulations : Key, axe, tree, present shaking
+        f.write('\n' + '[Objects manipulated] = ' + str(objects_manipulated))
+        f.write('\n' + '[Total manipulation actions] = ' + str(number_of_manipulations))
 
-#     Interacting with novel sensory interactions / sensory experiences such as touch, sight, and sound - deviating from regular : Number of sound interactions 
-f.write('\n' + '[Sensory Interactions : sound] = ' + str(sensory_interactions_sound))
+        #     Number of attempts made to answer the guessing puzzle : Number of clicks on Guess
+        f.write('\n' + '[Number of guesses] = ' + str(guesses))
 
-#     Novel objects interacted with (animated presents, and objects with sound) : Number of animated presents clicked on 
-#f.write('\n' + '[Novel objects manipulated] = ' + str(animated_objects_manipulated))
+        #     Number of questions asked : NA
 
-#     Ambiguous objects interacted with : Clock, paper stroll clicks
-#TODO
-f.write('\n' + '[Ambiguous objects manipulated] = ' + str(ambiguous_objects_manipulated))
+        #     Number of questions that aided the hypothesis of what’s inside : NA
 
-#     Number of manipulations : Key, axe, tree, present shaking
-f.write('\n' + '[Objects manipulated] = ' + str(objects_manipulated))
-f.write('\n' + '[Total manipulation actions] = ' + str(number_of_manipulations))
+        #     Number of hidden presents found : Easy presents collected, Hidden presents collected, Total presents collected
+        f.write('\n' + '[Presents collected] = ' + str(i))
+        #TODO
+        f.write('\n' + '[Easy presents collected] = ' + str(i - hidden))
+        f.write('\n' + '[Hidden presents collected] = ' + str(hidden))
 
-#     Number of attempts made to answer the guessing puzzle : Number of clicks on Guess
-f.write('\n' + '[Number of guesses] = ' + str(guesses))
+        #     If the objects were mapped to their correct use : Present behind axe, key collected
+        # TODO
+        f.write('\n' + '[Objects mapped to correct use] = ' + str(successful_manipulations))
 
-#     Number of questions asked : NA 
+        #     Time spent exploring the game : Time stamps
+        f.write('\n' + str(datetime.now()) + ' , session complete')
 
-#     Number of questions that aided the hypothesis of what’s inside : NA
-
-#     Number of hidden presents found : Easy presents collected, Hidden presents collected, Total presents collected
-f.write('\n' + '[Presents collected] = ' + str(i))
-#TODO
-f.write('\n' + '[Easy presents collected] = ' + str(i - hidden))
-f.write('\n' + '[Hidden presents collected] = ' + str(hidden))
-
-#     If the objects were mapped to their correct use : Present behind axe, key collected
-# TODO
-f.write('\n' + '[Objects mapped to correct use] = ' + str(successful_manipulations))
-
-#     Time spent exploring the game : Time stamps  
-f.write('\n' + str(datetime.now()) + ' , session complete')
-
-f.flush()
-# f.close()
+        f.flush()
+        # f.close()
 
 pygame.quit()
 
