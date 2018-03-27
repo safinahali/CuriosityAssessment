@@ -451,7 +451,7 @@ with open(os.path.join(LOG_DIR,filename),"w") as f:
 
 
                     f.write('\n' + str(datetime.now()) + ',[Click Record] = ' + str(event.pos))
-                    f.flush()
+
 
                     # drag the hammer
                     if hammerfab.collidepoint(event.pos) and overlayOn == False:
@@ -495,7 +495,6 @@ with open(os.path.join(LOG_DIR,filename),"w") as f:
                         presentImage0.y = INVISIBLE_Y
                         print('working')
                         f.write('\n' + str(datetime.now()) + ', Found present #0, Total ' + str(i))
-                        f.flush()
 
                         #play sound
                         blip.play()
@@ -513,7 +512,6 @@ with open(os.path.join(LOG_DIR,filename),"w") as f:
                         i += 1
 
                         f.write('\n' + str(datetime.now()) + ', Found present #1, Total ' + str(i))
-                        f.flush()
                         #play sound
                         blip.play()
                         print ('playing')
@@ -535,7 +533,6 @@ with open(os.path.join(LOG_DIR,filename),"w") as f:
                         #Log present collection
                         i += 1
                         f.write('\n' + str(datetime.now()) + ', Found present #2, Total ' + str(i))
-                        f.flush()
                         presentImage2.x = INVISIBLE_X
                         presentImage2.y = INVISIBLE_Y
                         print('working')
@@ -555,7 +552,6 @@ with open(os.path.join(LOG_DIR,filename),"w") as f:
                         #Log present collection
                         i += 1
                         f.write('\n' + str(datetime.now()) + ', Found present #3, Total ' + str(i))
-                        f.flush()
                         presentImage3.x = INVISIBLE_X
                         presentImage3.y = INVISIBLE_Y
                         print('working')
@@ -575,7 +571,6 @@ with open(os.path.join(LOG_DIR,filename),"w") as f:
                         #Log present collection
                         i += 1
                         f.write('\n' + str(datetime.now()) + ', Found present #4, Total ' + str(i))
-                        f.flush()
                         presentImage4.x = INVISIBLE_X
                         presentImage4.y = INVISIBLE_Y
                         print('working')
@@ -594,7 +589,6 @@ with open(os.path.join(LOG_DIR,filename),"w") as f:
                         #Log present collection
                         i += 1
                         f.write('\n' + str(datetime.now()) + ', Found present #5, Total ' + str(i))
-                        f.flush()
                         presentImage5.x = INVISIBLE_X
                         presentImage5.y = INVISIBLE_Y
                         print('working')
@@ -613,7 +607,6 @@ with open(os.path.join(LOG_DIR,filename),"w") as f:
                         #Log present collection
                         i += 1
                         f.write('\n' + str(datetime.now()) + ', Found present #6, Total ' + str(i))
-                        f.flush()
                         presentImage6.x = INVISIBLE_X
                         presentImage6.y = INVISIBLE_Y
                         print('working')
@@ -631,7 +624,6 @@ with open(os.path.join(LOG_DIR,filename),"w") as f:
                         #Log present collection
                         i += 1
                         f.write('\n' + str(datetime.now()) + ', Found present #7, Total ' + str(i))
-                        f.flush()
                         presentImage7.x = INVISIBLE_X
                         presentImage7.y = INVISIBLE_Y
                         print('working')
@@ -649,7 +641,6 @@ with open(os.path.join(LOG_DIR,filename),"w") as f:
                         #Log present collection
                         i += 1
                         f.write('\n' + str(datetime.now()) + ', Found present #8, Total ' + str(i))
-                        f.flush()
                         presentImage8.x = INVISIBLE_X
                         presentImage8.y = INVISIBLE_Y
 
@@ -665,7 +656,6 @@ with open(os.path.join(LOG_DIR,filename),"w") as f:
                         #Log present collection
                         i += 1
                         f.write('\n' + str(datetime.now()) + ', Found present #9, Total ' + str(i))
-                        f.flush()
                         presentImage9.x = INVISIBLE_X
                         presentImage9.y = INVISIBLE_Y
                         print('workinghid')
@@ -894,6 +884,8 @@ with open(os.path.join(LOG_DIR,filename),"w") as f:
 
 
         # - draws (without updates) -
+
+        f.flush()
 
         screen.fill(WHITE)
         screen.blit(bg, (0, 0))
