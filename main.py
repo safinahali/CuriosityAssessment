@@ -809,7 +809,8 @@ with open(os.path.join(LOG_DIR,"log.txt"),"w+") as f:
 
                             magic.play()
                             # print ('playing')
-                            # magic = empty
+                            time.sleep(1)
+                            magic = empty
                             # successful_manipulations += 1
 
                     if hammerfab.x < 1018 and hammerfab.x > 777 and hammerfab.y < 1261 and hammerfab.y > 981:
@@ -820,7 +821,8 @@ with open(os.path.join(LOG_DIR,"log.txt"),"w+") as f:
 
                             chop.play()
                             # print ('playing')
-                            # chop = empty
+                            time.sleep(1)
+                            chop = empty
                             # successful_manipulations += 1
 
 
@@ -838,7 +840,6 @@ with open(os.path.join(LOG_DIR,"log.txt"),"w+") as f:
                             hammerfab.x = mouse_x + offset_x
                             hammerfab.y = mouse_y + offset_y  
                             f.write('\n' + str(datetime.now()) + ' , objects_manipulated')
-                            objects_manipulated +=1
                             f.flush()
 
 
@@ -846,12 +847,16 @@ with open(os.path.join(LOG_DIR,"log.txt"),"w+") as f:
                     if keyfab_dragging:
                             mouse_x, mouse_y = event.pos
                             keyfab.x = mouse_x + offset_x
-                            keyfab.y = mouse_y + offset_y  
+                            keyfab.y = mouse_y + offset_y 
+                            f.write('\n' + str(datetime.now()) + ' , objects_manipulated')
+                            f.flush() 
 
                     if wclockfab_dragging:
                             mouse_x, mouse_y = event.pos
                             wclockfab.x = mouse_x + offset_x
                             wclockfab.y = mouse_y + offset_y 
+                            f.write('\n' + str(datetime.now()) + ' , objects_manipulated')
+                            f.flush()
 
 
                       # #SPEECH RECOGNITION SEGMENT -- NOT FOR DEMO
