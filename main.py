@@ -21,10 +21,17 @@ from os import path
 #user_input = input("Participant ID: ")
 #TODO : UI for PID
 user_input = "p"
-# try:
-#         import android
-# except Import:
-#         android = None
+
+try:
+        import android
+        print "android module loaded"
+        print dir(android)
+except ImportError:
+        android = None
+
+if android:
+    android.init()
+    #android.map_key(android.KEYCODE_BACK, pygame.K_ESCAPE)
 
 # --- constants --- (UPPER_CASE names)
 
@@ -52,6 +59,7 @@ FPS = 30
 
 pygame.init()
 pygame.mixer.init()
+pygame.font.init()
 # if android:
 #         android.init()
 #         android.map_key(android.KEYCODE_BACK, pygame.K_ESCAPE)
@@ -302,12 +310,19 @@ running = True
 #start time logging
 from datetime import datetime
 
-pygame.font.init() # you have to call this at the start,
+try:
+        with open("/sdcard/pid_initial.txt", 'r') as pid_txt:
+                row = pid_txt.readline()
+                row = row.split(';')
+                pid_text = row[0]
+                pinitial_text = row[1]
+except:
+        pid_text = 'test'
+        pinitial_text = 'test'
+
+
                    # if you want to use this module.
-myfont = pygame.font.SysFont('Comic Sans MS', 30)
-
-
-font = pygame.font.Font(None, 32)
+myfont = pygame.font.Font("DejaVuSans.ttf", 24)
 
 pid_input_box = pygame.Rect(SCREEN_WIDTH * 0.5 - 220, SCREEN_HEIGHT * 0.5 - 16, 140, 32)
 pinitial_input_box = pygame.Rect(SCREEN_WIDTH * 0.5 + 80, SCREEN_HEIGHT * 0.5 - 16, 140, 32)
@@ -317,8 +332,8 @@ pid_color = color_inactive
 pinitial_color = color_inactive
 pid_active = False
 pinitial_active = False
-pid_text = ''
-pinitial_text = ''
+#pid_text = ''
+#pinitial_text = ''
 
 pid_textsurface = myfont.render('Participant ID', False, (0, 0, 0))
 pid_textsurfacefab = pid_textsurface.get_rect()
@@ -362,6 +377,8 @@ while running:
                         if pid_input_box.collidepoint(event.pos):
                                 # Toggle the active variable.
                                 pid_active = not pid_active
+                                #if android:
+                                #        android.show_keyboard(0)
                         else:
                                 pid_active = False
                                 # Change the current color of the input box.
@@ -383,16 +400,6 @@ while running:
                                         continue
 
                                 print "pid pinitial input done"
-                                pid_overlayfab.x = SCREEN_WIDTH + 100
-                                pid_overlayfab.y = SCREEN_HEIGHT + 100
-                                pid_textsurfacefab.x = SCREEN_WIDTH + 100
-                                pid_textsurfacefab.y = SCREEN_HEIGHT + 100
-                                pid_input_box.x = SCREEN_WIDTH + 100
-                                pid_input_box.y = SCREEN_HEIGHT + 100
-                                pinitial_textsurfacefab.x = SCREEN_WIDTH + 100
-                                pinitial_textsurfacefab.y = SCREEN_HEIGHT + 100
-                                pinitial_input_box.x = SCREEN_WIDTH + 100
-                                pinitial_input_box.y = SCREEN_HEIGHT + 100
 
                                 running = False
 
@@ -402,8 +409,8 @@ while running:
         screen.blit(pinitial_textsurface, pinitial_textsurfacefab)
         screen.blit(pid_done, pid_donefab)
 
-        pid_txt_surface = font.render(pid_text, True, pid_color)
-        pinitial_txt_surface = font.render(pinitial_text, True, pinitial_color)
+        pid_txt_surface = myfont.render(pid_text, True, pid_color)
+        pinitial_txt_surface = myfont.render(pinitial_text, True, pinitial_color)
         width = max(200, pid_txt_surface.get_width() + 10)
         pid_input_box.w = width
         pinitial_input_box.w = width
