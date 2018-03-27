@@ -29,7 +29,7 @@ user_input = "p"
 # --- constants --- (UPPER_CASE names)
 
 SCREEN_WIDTH = 2048
-SCREEN_HEIGHT = 1550
+SCREEN_HEIGHT = 1549
 
 #BLACK = (  0,   0,   0)
 WHITE = (255, 255, 255)
@@ -102,8 +102,8 @@ hidden = 0
 
 img0 = pygame.image.load('assets/present0.png')
 presentImage0 = img0.get_rect()
-presentImage0.x = 538
-presentImage0.y = 641
+presentImage0.x = 855
+presentImage0.y = 1075
 
 collectedPresentImage0 = img0.get_rect()
 collectedPresentImage0.x = 2000
@@ -111,8 +111,8 @@ collectedPresentImage0.y = 2000
 
 img1 = pygame.image.load('assets/present1.png')
 presentImage1 = img1.get_rect()
-presentImage1.x = 818
-presentImage1.y = 612
+presentImage1.x = 1302
+presentImage1.y = 1030
 
 collectedPresentImage1 = img1.get_rect()
 collectedPresentImage1.x = 2000
@@ -120,8 +120,8 @@ collectedPresentImage1.y = 2000
 
 img2 = pygame.image.load('assets/present2.png')
 presentImage2 = img2.get_rect()
-presentImage2.x = 916
-presentImage2.y = 446
+presentImage2.x = 1460
+presentImage2.y = 763
 
 collectedPresentImage2 = img2.get_rect()
 collectedPresentImage2.x = 2000
@@ -129,8 +129,8 @@ collectedPresentImage2.y = 2000
 
 img3 = pygame.image.load('assets/present3.png')
 presentImage3 = img3.get_rect()
-presentImage3.x = 1181
-presentImage3.y = 339
+presentImage3.x = 1883
+presentImage3.y = 593
 
 collectedPresentImage3 = img3.get_rect()
 collectedPresentImage3.x = 2000
@@ -138,8 +138,8 @@ collectedPresentImage3.y = 2000
 
 img4 = pygame.image.load('assets/present4.png')
 presentImage4 = img4.get_rect()
-presentImage4.x = 1118
-presentImage4.y = 135
+presentImage4.x = 1782
+presentImage4.y = 267
 
 collectedPresentImage4 = img4.get_rect()
 collectedPresentImage4.x = 2000
@@ -147,8 +147,8 @@ collectedPresentImage4.y = 2000
 
 img5 = pygame.image.load('assets/present5.png')
 presentImage5 = img5.get_rect()
-presentImage5.x = 628
-presentImage5.y = 76
+presentImage5.x = 999
+presentImage5.y = 172
 
 collectedPresentImage5 = img5.get_rect()
 collectedPresentImage5.x = 2000
@@ -156,8 +156,8 @@ collectedPresentImage5.y = 2000
 
 img6 = pygame.image.load('assets/present6.png')
 presentImage6 = img6.get_rect()
-presentImage6.x = 546
-presentImage6.y = 428
+presentImage6.x = 868
+presentImage6.y = 736
 
 collectedPresentImage6 = img6.get_rect()
 collectedPresentImage6.x = 2000
@@ -165,8 +165,8 @@ collectedPresentImage6.y = 2000
 
 img7 = pygame.image.load('assets/present7.png')
 presentImage7 = img7.get_rect()
-presentImage7.x = 535
-presentImage7.y = 477
+presentImage7.x = 850
+presentImage7.y = 815
 
 collectedPresentImage7 = img7.get_rect()
 collectedPresentImage7.x = 2000
@@ -174,8 +174,8 @@ collectedPresentImage7.y = 2000
 
 img8 = pygame.image.load('assets/present8.png')
 presentImage8 = img8.get_rect()
-presentImage8.x = 656
-presentImage8.y = 435
+presentImage8.x = 1043
+presentImage8.y = 762
 
 collectedPresentImage8 = img8.get_rect()
 collectedPresentImage8.x = 2000
@@ -183,48 +183,49 @@ collectedPresentImage8.y = 2000
 
 tree = pygame.image.load('assets/tree.png')
 treefab = tree.get_rect()
-treefab.x = 509
-treefab.y = 51
+treefab.x = 809
+treefab.y = 132
 
 shelf = pygame.image.load('assets/shelf.png')
 shelffab = shelf.get_rect()
-shelffab.x = 987
-shelffab.y = 154
+shelffab.x = 1572
+shelffab.y = 297
 
 drum = pygame.image.load('assets/drum.png')
 drumfab = drum.get_rect()
-drumfab.x = 489
-drumfab.y = 582
+drumfab.x = 777
+drumfab.y = 981
 
 chest = pygame.image.load('assets/chest.png')
 chestfab = chest.get_rect()
-chestfab.x = 761
-chestfab.y = 545
+chestfab.x = 1211
+chestfab.y = 922
 
 wclock = pygame.image.load('assets/wclock.png')
 wclockfab = wclock.get_rect()
-wclockfab.x = 786
-wclockfab.y = 43
+wclockfab.x = 1256
+wclockfab.y = 108
 
 hammer = pygame.image.load('assets/hammer.png')
 hammerfab = hammer.get_rect()
-hammerfab.x = 1103
-hammerfab.y = 583
+hammerfab.x = 1748
+hammerfab.y = 996
 
+#POSITION
 key = pygame.image.load('assets/key.png')
 keyfab = key.get_rect()
-keyfab.x = 1030
-keyfab.y = 231
+keyfab.x = 1642
+keyfab.y = 420
 
 done = pygame.image.load('assets/done.png')
 donefab = done.get_rect()
-donefab.x = 1138
-donefab.y = 726
+donefab.x = 1787
+donefab.y = 1303
 
 img9 = pygame.image.load('assets/present9.png')
 presentImage9 = img9.get_rect()
-presentImage9.x = 832
-presentImage9.y = 86
+presentImage9.x = 1334
+presentImage9.y = 191
 
 collectedPresentImage9 = img9.get_rect()
 collectedPresentImage9.x = 2000
@@ -378,12 +379,12 @@ with open(os.path.join(LOG_DIR,"log.txt"),"w+") as f:
                                     overlayfab.x = 0
                                     overlayfab.y = 0
                                     
-                                    collectedPresentImage0.x = 601
-                                    collectedPresentImage0.y = 312
-                                    overlayguess.x = 505
-                                    overlayguess.y = 512
-                                    overlayskip.x = 689
-                                    overlayskip.y = 512
+                                    collectedPresentImage0.x = 957
+                                    collectedPresentImage0.y = 587
+                                    overlayguess.x = 841
+                                    overlayguess.y = 867
+                                    overlayskip.x = 1097
+                                    overlayskip.y = 867
 
                                     hidden += 1
 
@@ -412,12 +413,12 @@ with open(os.path.join(LOG_DIR,"log.txt"),"w+") as f:
                                     overlayfab.x = 0
                                     overlayfab.y = 0
                                     
-                                    collectedPresentImage1.x = 601
-                                    collectedPresentImage1.y = 312
-                                    overlayguess.x = 505
-                                    overlayguess.y = 512
-                                    overlayskip.x = 689
-                                    overlayskip.y = 512
+                                    collectedPresentImage1.x = 957
+                                    collectedPresentImage1.y = 587
+                                    overlayguess.x = 841
+                                    overlayguess.y = 867
+                                    overlayskip.x = 1097
+                                    overlayskip.y = 867
 
                                     overlayOn = True
 
@@ -443,12 +444,12 @@ with open(os.path.join(LOG_DIR,"log.txt"),"w+") as f:
                                     overlayfab.x = 0
                                     overlayfab.y = 0
                                     
-                                    collectedPresentImage2.x = 601
-                                    collectedPresentImage2.y = 312
-                                    overlayguess.x = 505
-                                    overlayguess.y = 512
-                                    overlayskip.x = 689
-                                    overlayskip.y = 512
+                                    collectedPresentImage2.x = 957
+                                    collectedPresentImage2.y = 587
+                                    overlayguess.x = 841
+                                    overlayguess.y = 867
+                                    overlayskip.x = 1097
+                                    overlayskip.y = 867
 
                                     overlayOn = True
 
@@ -472,12 +473,12 @@ with open(os.path.join(LOG_DIR,"log.txt"),"w+") as f:
                                     overlayfab.x = 0
                                     overlayfab.y = 0
                                     
-                                    collectedPresentImage3.x = 601
-                                    collectedPresentImage3.y = 312
-                                    overlayguess.x = 505
-                                    overlayguess.y = 512
-                                    overlayskip.x = 689
-                                    overlayskip.y = 512
+                                    collectedPresentImage3.x = 957
+                                    collectedPresentImage3.y = 587
+                                    overlayguess.x = 841
+                                    overlayguess.y = 867
+                                    overlayskip.x = 1097
+                                    overlayskip.y = 867
 
                                     overlayOn = True
 
@@ -502,12 +503,12 @@ with open(os.path.join(LOG_DIR,"log.txt"),"w+") as f:
                                     overlayfab.x = 0
                                     overlayfab.y = 0
                                     
-                                    collectedPresentImage4.x = 601
-                                    collectedPresentImage4.y = 312
-                                    overlayguess.x = 505
-                                    overlayguess.y = 512
-                                    overlayskip.x = 689
-                                    overlayskip.y = 512
+                                    collectedPresentImage4.x = 957
+                                    collectedPresentImage4.y = 587
+                                    overlayguess.x = 841
+                                    overlayguess.y = 867
+                                    overlayskip.x = 1097
+                                    overlayskip.y = 867
 
                                     overlayOn = True
 
@@ -531,12 +532,12 @@ with open(os.path.join(LOG_DIR,"log.txt"),"w+") as f:
                                     overlayfab.x = 0
                                     overlayfab.y = 0
                                     
-                                    collectedPresentImage5.x = 601
-                                    collectedPresentImage5.y = 312
-                                    overlayguess.x = 505
-                                    overlayguess.y = 512
-                                    overlayskip.x = 689
-                                    overlayskip.y = 512
+                                    collectedPresentImage5.x = 957
+                                    collectedPresentImage5.y = 587
+                                    overlayguess.x = 841
+                                    overlayguess.y = 867
+                                    overlayskip.x = 1097
+                                    overlayskip.y = 867
 
                                     overlayOn = True
                                     
@@ -560,12 +561,12 @@ with open(os.path.join(LOG_DIR,"log.txt"),"w+") as f:
                                     overlayfab.x = 0
                                     overlayfab.y = 0
                                     
-                                    collectedPresentImage6.x = 601
-                                    collectedPresentImage6.y = 312
-                                    overlayguess.x = 505
-                                    overlayguess.y = 512
-                                    overlayskip.x = 689
-                                    overlayskip.y = 512
+                                    collectedPresentImage6.x = 957
+                                    collectedPresentImage6.y = 587
+                                    overlayguess.x = 841
+                                    overlayguess.y = 867
+                                    overlayskip.x = 1097
+                                    overlayskip.y = 867
 
                                     overlayOn = True
 
@@ -588,12 +589,12 @@ with open(os.path.join(LOG_DIR,"log.txt"),"w+") as f:
                                     overlayfab.x = 0
                                     overlayfab.y = 0
                                     
-                                    collectedPresentImage7.x = 601
-                                    collectedPresentImage7.y = 312
-                                    overlayguess.x = 505
-                                    overlayguess.y = 512
-                                    overlayskip.x = 689
-                                    overlayskip.y = 512
+                                    collectedPresentImage7.x = 957
+                                    collectedPresentImage7.y = 587
+                                    overlayguess.x = 841
+                                    overlayguess.y = 867
+                                    overlayskip.x = 1097
+                                    overlayskip.y = 867
 
                                     overlayOn = True
 
@@ -614,12 +615,12 @@ with open(os.path.join(LOG_DIR,"log.txt"),"w+") as f:
                                     overlayfab.x = 0
                                     overlayfab.y = 0
                                     
-                                    collectedPresentImage8.x = 601
-                                    collectedPresentImage8.y = 312
-                                    overlayguess.x = 505
-                                    overlayguess.y = 512
-                                    overlayskip.x = 689
-                                    overlayskip.y = 512
+                                    collectedPresentImage8.x = 957
+                                    collectedPresentImage8.y = 587
+                                    overlayguess.x = 841
+                                    overlayguess.y = 867
+                                    overlayskip.x = 1097
+                                    overlayskip.y = 867
 
                                     overlayOn = True
 
@@ -654,8 +655,8 @@ with open(os.path.join(LOG_DIR,"log.txt"),"w+") as f:
 
                                     overlayskip.x = 2000
                                     overlayskip.y = 2000
-                                    overlayguessdone.x = 689
-                                    overlayguessdone.y = 512
+                                    overlayguessdone.x = 1097
+                                    overlayguessdone.y = 867
 
                             if overlayguessdone.collidepoint(event.pos):
                                     mouse_x, mouse_y = event.pos
@@ -700,12 +701,12 @@ with open(os.path.join(LOG_DIR,"log.txt"),"w+") as f:
                                     overlayfab.x = 0
                                     overlayfab.y = 0
                                     
-                                    collectedPresentImage9.x = 601
-                                    collectedPresentImage9.y = 312
-                                    overlayguess.x = 505
-                                    overlayguess.y = 512
-                                    overlayskip.x = 689
-                                    overlayskip.y = 512
+                                    collectedPresentImage0.x = 957
+                                    collectedPresentImage0.y = 587
+                                    overlayguess.x = 841
+                                    overlayguess.y = 867
+                                    overlayskip.x = 1097
+                                    overlayskip.y = 867
 
                                     overlayOn = True
 
@@ -800,7 +801,7 @@ with open(os.path.join(LOG_DIR,"log.txt"),"w+") as f:
                             keyfab_dragging = False
                             wclockfab_dragging = False
 
-                    if keyfab.x < 915 and keyfab.x > 875 and keyfab.y < 642 and keyfab.y > 602:
+                    if keyfab.x < 1476 and keyfab.x > 1376 and keyfab.y < 1101 and keyfab.y > 1001:
                             chestfab.x = 2000
                             chestfab.y = 2000
                             chest_visible = False
@@ -808,10 +809,10 @@ with open(os.path.join(LOG_DIR,"log.txt"),"w+") as f:
 
                             magic.play()
                             # print ('playing')
-                            magic = empty
+                            # magic = empty
                             # successful_manipulations += 1
 
-                    if hammerfab.x < 625 and hammerfab.x > 496 and hammerfab.y < 717 and hammerfab.y > 542:
+                    if hammerfab.x < 1018 and hammerfab.x > 777 and hammerfab.y < 1261 and hammerfab.y > 981:
                             drumfab.x = 2000
                             drumfab.y = 2000
                             drum_visible = False
@@ -819,7 +820,7 @@ with open(os.path.join(LOG_DIR,"log.txt"),"w+") as f:
 
                             chop.play()
                             # print ('playing')
-                            chop = empty
+                            # chop = empty
                             # successful_manipulations += 1
 
 
@@ -836,6 +837,11 @@ with open(os.path.join(LOG_DIR,"log.txt"),"w+") as f:
                             mouse_x, mouse_y = event.pos
                             hammerfab.x = mouse_x + offset_x
                             hammerfab.y = mouse_y + offset_y  
+                            f.write('\n' + str(datetime.now()) + ' , objects_manipulated')
+                            objects_manipulated +=1
+                            f.flush()
+
+
 
                     if keyfab_dragging:
                             mouse_x, mouse_y = event.pos
@@ -993,6 +999,10 @@ f.flush()
 
 pygame.quit()
 
+
+# key and hammer hit location 
+# sizes of the overlays and the buttons 
+# logging with events 
 
 
 
