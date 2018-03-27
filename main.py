@@ -231,7 +231,19 @@ collectedPresentImage9.x = 2000
 collectedPresentImage9.y = 2000
 
 #overlay
+pid_overlay = pygame.image.load('assets/pid_overlay.png')
+pid_overlay = pygame.transform.scale(pid_overlay, (SCREEN_WIDTH, SCREEN_HEIGHT))
+pid_overlayfab = pid_overlay.get_rect()
+pid_overlayfab.x = 0
+pid_overlayfab.y = 0
+
+pid_done = pygame.image.load('assets/oguessdone.png')
+pid_donefab = pid_done.get_rect()
+pid_donefab.x = SCREEN_WIDTH * 0.5 - pid_donefab.w * 0.5
+pid_donefab.y = SCREEN_HEIGHT * 0.5 + 100
+
 overlay = pygame.image.load('assets/overlay.png')
+overlay = pygame.transform.scale(overlay, (SCREEN_WIDTH, SCREEN_HEIGHT))
 overlayfab = overlay.get_rect()
 overlayfab.x = 2000
 overlayfab.y = 2000
@@ -290,8 +302,123 @@ running = True
 #start time logging
 from datetime import datetime
 
+pygame.font.init() # you have to call this at the start,
+                   # if you want to use this module.
+myfont = pygame.font.SysFont('Comic Sans MS', 30)
 
 
+font = pygame.font.Font(None, 32)
+
+pid_input_box = pygame.Rect(SCREEN_WIDTH * 0.5 - 220, SCREEN_HEIGHT * 0.5 - 16, 140, 32)
+pinitial_input_box = pygame.Rect(SCREEN_WIDTH * 0.5 + 80, SCREEN_HEIGHT * 0.5 - 16, 140, 32)
+color_inactive = pygame.Color('lightskyblue3')
+color_active = pygame.Color('dodgerblue2')
+pid_color = color_inactive
+pinitial_color = color_inactive
+pid_active = False
+pinitial_active = False
+pid_text = ''
+pinitial_text = ''
+
+pid_textsurface = myfont.render('Participant ID', False, (0, 0, 0))
+pid_textsurfacefab = pid_textsurface.get_rect()
+pid_textsurfacefab.x = pid_input_box.x
+pid_textsurfacefab.y = pid_input_box.y - 30
+
+pinitial_textsurface = myfont.render('Participant Initial', False, (0, 0, 0))
+pinitial_textsurfacefab = pinitial_textsurface.get_rect()
+pinitial_textsurfacefab.x = pinitial_input_box.x
+pinitial_textsurfacefab.y = pinitial_input_box.y - 30
+
+
+# pid and pinitial window
+while running:
+
+        # - events -
+        for event in pygame.event.get():
+
+                if event.type == pygame.QUIT:
+                        running = False
+
+                elif event.type == pygame.KEYDOWN:
+                        if pid_active:
+                                if event.key == pygame.K_RETURN:
+                                        print(pid_text)
+                                elif event.key == pygame.K_BACKSPACE:
+                                        pid_text = pid_text[:-1]
+                                else:
+                                        pid_text += event.unicode
+
+                        if pinitial_active:
+                                if event.key == pygame.K_RETURN:
+                                        print(pinitial_text)
+                                elif event.key == pygame.K_BACKSPACE:
+                                        pinitial_text = pinitial_text[:-1]
+                                else:
+                                        pinitial_text += event.unicode
+
+                elif event.type == pygame.MOUSEBUTTONDOWN:
+
+                        if pid_input_box.collidepoint(event.pos):
+                                # Toggle the active variable.
+                                pid_active = not pid_active
+                        else:
+                                pid_active = False
+                                # Change the current color of the input box.
+                        # Change the current color of the input box.
+                        pid_color = color_active if pid_active else color_inactive
+
+                        if pinitial_input_box.collidepoint(event.pos):
+                                # Toggle the active variable.
+                                pinitial_active = not pinitial_active
+                        else:
+                                pinitial_active = False
+                                # Change the current color of the input box.
+                        # Change the current color of the input box.
+                        pinitial_color = color_active if pinitial_active else color_inactive
+
+                        if pid_donefab.collidepoint(event.pos):
+
+                                if pid_text == "" or pinitial_text == "":
+                                        continue
+
+                                print "pid pinitial input done"
+                                pid_overlayfab.x = SCREEN_WIDTH + 100
+                                pid_overlayfab.y = SCREEN_HEIGHT + 100
+                                pid_textsurfacefab.x = SCREEN_WIDTH + 100
+                                pid_textsurfacefab.y = SCREEN_HEIGHT + 100
+                                pid_input_box.x = SCREEN_WIDTH + 100
+                                pid_input_box.y = SCREEN_HEIGHT + 100
+                                pinitial_textsurfacefab.x = SCREEN_WIDTH + 100
+                                pinitial_textsurfacefab.y = SCREEN_HEIGHT + 100
+                                pinitial_input_box.x = SCREEN_WIDTH + 100
+                                pinitial_input_box.y = SCREEN_HEIGHT + 100
+
+                                running = False
+
+        screen.fill(WHITE)
+        screen.blit(pid_overlay, pid_overlayfab)
+        screen.blit(pid_textsurface, pid_textsurfacefab)
+        screen.blit(pinitial_textsurface, pinitial_textsurfacefab)
+        screen.blit(pid_done, pid_donefab)
+
+        pid_txt_surface = font.render(pid_text, True, pid_color)
+        pinitial_txt_surface = font.render(pinitial_text, True, pinitial_color)
+        width = max(200, pid_txt_surface.get_width() + 10)
+        pid_input_box.w = width
+        pinitial_input_box.w = width
+        # Blit the text.
+        screen.blit(pid_txt_surface, (pid_input_box.x + 5, pid_input_box.y + 5))
+        screen.blit(pinitial_txt_surface, (pinitial_input_box.x + 5, pinitial_input_box.y + 5))
+        # Blit the input_box rect.
+        pygame.draw.rect(screen, pid_color, pid_input_box, 5)
+        pygame.draw.rect(screen, pinitial_color, pinitial_input_box, 5)
+
+        pygame.display.flip()
+
+        # - constant game speed / FPS -
+
+        clock.tick(FPS)
 
 try:
         os.mkdir(LOG_DIR)
@@ -300,12 +427,16 @@ except:
         print "skip creating dir"
         pass
 
-with open(os.path.join(LOG_DIR,"log.txt"),"w+") as f:
+filename = "pre_"+pid_text+"_"+datetime.now().strftime('%Y-%m-%d-%H-%M-%S-%f')+".txt"
+
+with open(os.path.join(LOG_DIR,filename),"w") as f:
         f.write('\n' + str(datetime.now()) + ' , session start')
         f.write('\n' + str(user_input))
         f.flush()
 
         print "logfile created", f
+
+        running = True
 
         while running:
 
@@ -318,9 +449,6 @@ with open(os.path.join(LOG_DIR,"log.txt"),"w+") as f:
                                 running = False
 
                         elif event.type == pygame.MOUSEBUTTONDOWN:
-
-
-
 
                                 if event.button == 1:
 
@@ -944,11 +1072,14 @@ with open(os.path.join(LOG_DIR,"log.txt"),"w+") as f:
                 screen.blit(img8, collectedPresentImage8)
                 screen.blit(img9, collectedPresentImage9)
 
+
+
                 pygame.display.flip()
 
                 # - constant game speed / FPS -
 
                 clock.tick(FPS)
+
 
                 # - end -
 
