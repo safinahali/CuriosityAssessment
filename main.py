@@ -809,7 +809,7 @@ with open(os.path.join(LOG_DIR,"log.txt"),"w+") as f:
 
                             magic.play()
                             # print ('playing')
-                            time.sleep(1)
+                            time.sleep(0.5)
                             magic = empty
                             # successful_manipulations += 1
 
@@ -821,7 +821,7 @@ with open(os.path.join(LOG_DIR,"log.txt"),"w+") as f:
 
                             chop.play()
                             # print ('playing')
-                            time.sleep(1)
+                            time.sleep(0.5)
                             chop = empty
                             # successful_manipulations += 1
 
