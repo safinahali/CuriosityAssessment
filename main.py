@@ -262,8 +262,8 @@ pid_donefab.y = SCREEN_HEIGHT * 0.5 + 100
 
 myfont = pygame.font.Font("DejaVuSans.ttf", 32)
 width = SCREEN_WIDTH * 0.15
-pid_input_box = pygame.Rect(SCREEN_WIDTH * 0.5 - width - 50, SCREEN_HEIGHT * 0.5 - 16, width, 48)
-pinitial_input_box = pygame.Rect(SCREEN_WIDTH * 0.5 + 50, SCREEN_HEIGHT * 0.5 - 16, width, 48)
+pid_input_box = pygame.Rect(SCREEN_WIDTH * 0.5 - width - 50, SCREEN_HEIGHT * 0.5 - 100, width, 48)
+pinitial_input_box = pygame.Rect(SCREEN_WIDTH * 0.5 + 50, pid_input_box.y, width, 48)
 color_inactive = pygame.Color('lightskyblue3')
 color_active = pygame.Color('dodgerblue2')
 pid_color = color_inactive
