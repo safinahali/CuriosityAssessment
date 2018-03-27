@@ -434,7 +434,7 @@ except:
         print "skip creating dir"
         pass
 
-filename = "pre_"+pid_text+"_"+datetime.now().strftime('%Y-%m-%d-%H-%M-%S-%f')+".txt"
+filename = "pre_"+pid_text+"_"+pinitial_text+"_"+datetime.now().strftime('%Y-%m-%d-%H-%M-%S-%f')+".txt"
 
 with open(os.path.join(LOG_DIR,filename),"w") as f:
         f.write('\n' + str(datetime.now()) + ' , session start')
