@@ -906,7 +906,7 @@ with open(os.path.join(LOG_DIR,filename),"w") as f:
 
                         magic.play()
                         # print ('playing')
-                        magic = empty
+                        #magic = empty
                         # successful_manipulations += 1
                         LOG(f, "key action success")
 
@@ -919,10 +919,10 @@ with open(os.path.join(LOG_DIR,filename),"w") as f:
                         # objects_manipulated +=1
 
                         chop.play()
-                        # print ('playing')
-                        chop = empty
+                        #print ('playing chop')
+                        #chop = empty
                         # successful_manipulations += 1
-                        LOG(f, " hammer action success")
+                        LOG(f, "hammer action success")
 
 
                 if clock_unmoved:
