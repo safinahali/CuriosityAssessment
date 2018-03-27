@@ -216,7 +216,7 @@ anchorfab.x = 1004
 anchorfab.y = 1109
 
 stroll = pygame.image.load('assets/stroll.png')
-strollfab = key.get_rect()
+strollfab = stroll.get_rect()
 strollfab.x = 564
 strollfab.y = 155
 
@@ -339,6 +339,61 @@ def LOG(f, msg):
     f.write(str(datetime.now()) + ", " + msg + "\n")
     f.flush()
 
+def print_summary(f):
+    # Log parameters
+    # Global :
+    #     mouse click locations
+    #     time stamp of events
+
+    # Event based :
+    #     Interacting with novel sensory interactions / sensory experiences such as touch, sight, and sound - deviating from regular : Number of sound interactions
+    #     Novel objects interacted with (animated presents, and objects with sound) : Number of animated presents clicked on
+    #     Ambiguous objects interacted with : Clock, paper stroll clicks
+    #     Number of manipulations : Key, axe, tree, present shaking
+    #     Number of attempts made to answer the guessing puzzle : Number of clicks on Guess
+    #     Number of questions asked : NA
+    #     Number of questions that aided the hypothesis of what’s inside : NA
+    #     Number of hidden presents found : Easy presents collected, Hidden presents collected, Total presents collected
+    #     Time spent exploring the game : Time stamps
+    #     If the objects were mapped to their correct use : Present behind axe, key collected
+
+    #     Interacting with novel sensory interactions / sensory experiences such as touch, sight, and sound - deviating from regular : Number of sound interactions
+    f.write('\n' + '[Sensory Interactions : sound] = ' + str(sensory_interactions_sound))
+
+    #     Novel objects interacted with (animated presents, and objects with sound) : Number of animated presents clicked on
+    # f.write('\n' + '[Novel objects manipulated] = ' + str(animated_objects_manipulated))
+
+    #     Ambiguous objects interacted with : Clock, paper stroll clicks
+    # TODO
+    f.write('\n' + '[Ambiguous objects manipulated] = ' + str(ambiguous_objects_manipulated))
+
+    #     Number of manipulations : Key, axe, tree, present shaking
+    # f.write('\n' + '[Objects manipulated] = ' + str(objects_manipulated))
+    f.write('\n' + '[Total manipulation actions] = ' + str(number_of_manipulations))
+
+    #     Number of attempts made to answer the guessing puzzle : Number of clicks on Guess
+    f.write('\n' + '[Number of guesses] = ' + str(guesses))
+
+    #     Number of questions asked : NA
+
+    #     Number of questions that aided the hypothesis of what’s inside : NA
+
+    #     Number of hidden presents found : Easy presents collected, Hidden presents collected, Total presents collected
+    f.write('\n' + '[Presents collected] = ' + str(i))
+    # TODO
+    f.write('\n' + '[Easy presents collected] = ' + str(i - hidden))
+    f.write('\n' + '[Hidden presents collected] = ' + str(hidden))
+
+    #     If the objects were mapped to their correct use : Present behind axe, key collected
+    # TODO
+    f.write('\n' + '[Objects mapped to correct use] = ' + str(successful_manipulations))
+
+    #     Time spent exploring the game : Time stamps
+    f.write('\n' + str(datetime.now()) + ' , session complete')
+
+    f.flush()
+
+
 try:
     with open("/sdcard/pid_initial.txt", 'r') as pid_txt:
         row = pid_txt.readline()
@@ -455,6 +510,7 @@ with open(os.path.join(LOG_DIR,filename),"w") as f:
             #event = pygame.event.wait()
 
             if event.type == pygame.QUIT:
+                print_summary(f)
                 running = False
 
             elif event.type == pygame.MOUSEBUTTONDOWN:
@@ -981,58 +1037,7 @@ with open(os.path.join(LOG_DIR,filename),"w") as f:
 
         # - end -
 
-    # Log parameters
-    # Global :
-    #     mouse click locations
-    #     time stamp of events
 
-    # Event based :
-    #     Interacting with novel sensory interactions / sensory experiences such as touch, sight, and sound - deviating from regular : Number of sound interactions
-    #     Novel objects interacted with (animated presents, and objects with sound) : Number of animated presents clicked on
-    #     Ambiguous objects interacted with : Clock, paper stroll clicks
-    #     Number of manipulations : Key, axe, tree, present shaking
-    #     Number of attempts made to answer the guessing puzzle : Number of clicks on Guess
-    #     Number of questions asked : NA
-    #     Number of questions that aided the hypothesis of what’s inside : NA
-    #     Number of hidden presents found : Easy presents collected, Hidden presents collected, Total presents collected
-    #     Time spent exploring the game : Time stamps
-    #     If the objects were mapped to their correct use : Present behind axe, key collected
-
-    #     Interacting with novel sensory interactions / sensory experiences such as touch, sight, and sound - deviating from regular : Number of sound interactions
-    f.write('\n' + '[Sensory Interactions : sound] = ' + str(sensory_interactions_sound))
-
-    #     Novel objects interacted with (animated presents, and objects with sound) : Number of animated presents clicked on
-    #f.write('\n' + '[Novel objects manipulated] = ' + str(animated_objects_manipulated))
-
-    #     Ambiguous objects interacted with : Clock, paper stroll clicks
-    #TODO
-    f.write('\n' + '[Ambiguous objects manipulated] = ' + str(ambiguous_objects_manipulated))
-
-    #     Number of manipulations : Key, axe, tree, present shaking
-    f.write('\n' + '[Objects manipulated] = ' + str(objects_manipulated))
-    f.write('\n' + '[Total manipulation actions] = ' + str(number_of_manipulations))
-
-    #     Number of attempts made to answer the guessing puzzle : Number of clicks on Guess
-    f.write('\n' + '[Number of guesses] = ' + str(guesses))
-
-    #     Number of questions asked : NA
-
-    #     Number of questions that aided the hypothesis of what’s inside : NA
-
-    #     Number of hidden presents found : Easy presents collected, Hidden presents collected, Total presents collected
-    f.write('\n' + '[Presents collected] = ' + str(i))
-    #TODO
-    f.write('\n' + '[Easy presents collected] = ' + str(i - hidden))
-    f.write('\n' + '[Hidden presents collected] = ' + str(hidden))
-
-    #     If the objects were mapped to their correct use : Present behind axe, key collected
-    # TODO
-    f.write('\n' + '[Objects mapped to correct use] = ' + str(successful_manipulations))
-
-    #     Time spent exploring the game : Time stamps
-    f.write('\n' + str(datetime.now()) + ' , session complete')
-
-    f.flush()
 # f.close()
 
 pygame.quit()
